@@ -1,0 +1,10 @@
+.header {
+  height: 32px;
+  width: 32px;
+  color: brown;
+}
+
+.text {
+  font-family: var(--font-basic);
+  font-size: var(--font-size-large);
+}
