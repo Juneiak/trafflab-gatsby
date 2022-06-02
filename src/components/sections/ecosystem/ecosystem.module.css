@@ -1,0 +1,98 @@
+.ecosystem {
+  padding-bottom: 344rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.list {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 30rem;
+}
+
+.card {
+  width: 216rem;
+  height: 184rem;
+  border-radius: 40px;
+  background-color: var(--color-dark-1);
+  transition: background-color 0.5s ease-out;
+  padding: 32rem;
+  box-sizing: border-box;
+}
+
+.labCard:hover {
+  background-color: var(--color-red-1);
+}
+
+.edCard:hover  {
+  background-color: var(--color-purple);
+
+}
+
+.appsCard:hover  {
+  background-color: var(--color-green);
+
+}
+
+.cryptCard:hover  {
+  background-color: var(--color-blue);
+
+}
+
+.merchCard:hover  {
+  background-color: var(--color-orange);
+
+}
+
+
+.logo {
+  width: 120rem;
+  height: 120rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: background-image 0.5s ease-out;
+}
+
+
+.labCard .logo {
+  background-image: url(../../../images/logos/lab.svg);
+}
+
+.edCard .logo {
+  background-image: url(../../../images/logos/education.svg);
+}
+
+.appsCard .logo {
+  background-image: url(../../../images/logos/apps.svg);
+}
+
+.cryptCard .logo {
+  background-image: url(../../../images/logos/crypt.svg);
+}
+
+.merchCard .logo {
+  background-image: url(../../../images/logos/merch.svg);
+}
+
+
+.labCard:hover .logo {
+  background-image: url(../../../images/logos/lab-hover.svg);
+}
+
+.edCard:hover .logo {
+  background-image: url(../../../images//logos/education-hover.svg);
+}
+
+.appsCard:hover .logo {
+  background-image: url(../../../images/logos/apps-hover.svg);
+}
+
+.cryptCard:hover .logo {
+  background-image: url(../../../images/logos/crypt-hover.svg);
+}
+
+.merchCard:hover .logo {
+  background-image: url(../../../images/logos/merch-hover.svg);
+}

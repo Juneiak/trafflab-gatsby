@@ -1,10 +1,18 @@
 .header {
-  height: 32px;
-  width: 32px;
-  color: brown;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
 }
 
-.text {
-  font-family: var(--font-basic);
-  font-size: var(--font-size-large);
+.content {
+  width: 1200rem;
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  gap: 140rem;
+  justify-items: center;
+  padding-top: 25rem;
+  padding-bottom: 25rem;
+  align-items: center;
 }

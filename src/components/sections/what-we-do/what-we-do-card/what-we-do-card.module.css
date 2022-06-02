@@ -1,0 +1,26 @@
+.listElement {
+
+}
+
+.card {
+  display: flex;
+}
+
+.icon {
+  width: 40rem;
+  height: 40rem;
+  background-position: center;
+  background-size: 24rem 24rem;
+  background-repeat: no-repeat;
+  margin-right: 16rem;
+  background-color: var(--color-dark-1);
+  border-radius: 12px;
+}
+
+.text {
+  margin-top: 12rem;
+  width: 222rem;
+  font-size: var(--font-size-body-big);
+  color: var(--color-gray-2);
+  font-weight: 400;
+}

@@ -1,0 +1,54 @@
+.marquee {
+  width: 100%;
+  height: max-content;
+  overflow: hidden;
+  padding: 22rem 0 157rem;
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 100%
+}
+
+.listElement {
+  display: flex;
+  align-items: center;
+}
+
+.listElement::after {
+  content: '';
+  width: 13rem;
+  height: 13rem;
+  margin: 0 32rem;
+  border-radius: 50%;
+  background: linear-gradient(250.18deg, rgba(255, 255, 255, 0.6) 1.29%, rgba(255, 255, 255, 0) 96.35%);
+}
+
+/* .listElement:first-child::before {
+  content: '';
+  width: 13rem;
+  height: 13rem;
+  margin-right: 32rem;
+  border-radius: 50%;
+  background: linear-gradient(250.18deg, rgba(255, 255, 255, 0.6) 1.29%, rgba(255, 255, 255, 0) 96.35%);
+} */
+
+.countryName {
+  font-size: var(--font-size-big);
+  font-family: var(--font-basic);
+  font-weight: 700;
+  background: linear-gradient(250.18deg, rgba(255, 255, 255, 0.6) 1.29%, rgba(255, 255, 255, 0) 96.35%);
+  background-clip: text;
+  color: transparent;
+}

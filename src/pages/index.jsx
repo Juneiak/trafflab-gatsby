@@ -1,12 +1,22 @@
-import * as React from "react"
-import Header from "../components/sections/header/header"
-import PageLayout from "../components/page-layout/page-layout"
+import * as React from "react";
+import IndexPageLayout from "../components/index-page-layout/index-page-layout";
+import {
+  CountriesMarquee,
+  TrafficSources,
+  WhatWeDo,
+  Ecosystem,
+  Blog,
+} from '../components/sections';
 
 export default function IndexPage() {
 
   return (
-    <PageLayout>
-      <Header />
-    </PageLayout>
+    <IndexPageLayout>
+      <CountriesMarquee />
+      <TrafficSources />
+      <WhatWeDo />
+      <Ecosystem />
+      <Blog />
+    </IndexPageLayout>
   )
 }

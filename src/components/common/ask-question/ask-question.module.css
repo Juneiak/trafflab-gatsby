@@ -1,0 +1,31 @@
+.askQuestion {
+  position: relative;
+
+}
+
+.workTime {
+  font-family: var(--font-basic);
+  font-size: var(--font-size-middle);
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+.askButton {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  width: max-content;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  
+  font-family: var(--font-basic);
+  font-size: var(--font-size-body-big);
+  color: var(--color-red-1);
+  transition: var(--link-opacity-transition)
+}
+
+.askButton:hover {
+  opacity: 0.8;
+}

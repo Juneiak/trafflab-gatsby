@@ -1,0 +1,17 @@
+.listElement {
+  
+}
+
+.link {
+  color: var(--color-gray-2);
+  text-decoration: none;
+  transition: var(--link-opacity-transition);
+
+  font-size: var(--font-size-body-big);
+  font-family: var(--font-basic);
+  font-weight: 400;
+}
+
+.link:hover {
+  opacity: 0.8;
+}

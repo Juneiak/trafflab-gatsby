@@ -1,0 +1,17 @@
+.backgroundItems {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  font-size: 10px;
+}
+
+.blurredBubble1 {
+  position: absolute;
+  box-shadow: 0px 0px 20rem 30rem rgba(253, 103, 106, 1);
+  width: 1px;
+  height: 1px;
+  top: 100px;
+  right: 50px;
+}

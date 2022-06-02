@@ -1,7 +1,12 @@
-@import url(./fonts/helios-font/helios-font.css);
+/* @import url(./fonts/helios/helios-font.css); */
+@import url(./fonts/helios-extra/helios-extra-font.css);
+
+html {
+  font-size: calc(1vw / 14.4);
+}
 
 :root {
-  --font-basic: 'Helios';
+  --font-basic: 'HeliosExt';
   --color-white: #fff;
   --color-dark-1: #121212;
   --color-dark-2: #181818;
@@ -9,20 +14,24 @@
   --color-gray-1: #444444;
   --color-gray-2:#ADADAD;
 
-  --color-red: #FD676A;
+  --color-red-1: #FD676A;
+  --color-red-2: #FF9799;
+  --color-red-3: #E03F42;
   --color-blue: #699CFC;
   --color-purple: #CB9CFD;
   --color-green: #3DCA3F;
   --color-orange: #FD9941;
   
   /* relative to 1440px */
-  --font-size-large: 4.45vw; /* 64px */
-  --font-size-big: 3.06vw; /* 44px */
-  --font-size-middle: 1.67vw ; /* 24px */
-  --font-size-small: 1.25vw; /* 18px */
-  --font-size-body-big: 1.11vw; /* 16px */
-  --font-size-body-middle: 0.97vw; /* 14px */
-  --font-size-body-small: 0.83vw; /* 12px */
+  --font-size-large: 64rem; /* 64px */
+  --font-size-big: 44rem; /* 44px */
+  --font-size-middle: 24rem; ; /* 24px */
+  --font-size-small: 18rem; /* 18px */
+  --font-size-body-big: 16rem; /* 16px */
+  --font-size-body-middle: 14rem; /* 14px */
+  --font-size-body-small: 12rem; /* 12px */
+
+  --link-opacity-transition: linear 0.35s opacity;
 }
 
 @media screen and (max-width: 480px) {

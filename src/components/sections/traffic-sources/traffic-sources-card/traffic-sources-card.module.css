@@ -1,0 +1,35 @@
+.listElement {
+  
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  height: 256rem;
+}
+
+.content {
+  border-radius: 40px;
+  background-color: var(--color-dark-1);
+  width: 278rem;
+  height: 192rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding-bottom: 30rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  bottom: 76rem;
+  width: 180rem;
+  height: 180rem;
+}
+
+.title {
+  color: var(--color-white);
+  font-size: var(--font-size-small);
+}

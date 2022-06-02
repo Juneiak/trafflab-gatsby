@@ -1,0 +1,17 @@
+.imageContainer {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  width: 949rem;
+  height: 724rem;
+}
+
+.imageShadow {
+  position: absolute;
+  width: 94%;
+  height: 35%;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, #121212 94.27%);
+}

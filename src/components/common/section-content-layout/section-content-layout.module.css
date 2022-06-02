@@ -1,0 +1,28 @@
+.content {
+  width: 1200rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.textContainer {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-basic);
+  margin-bottom: 32rem;
+}
+
+.title {
+  font-size: var(--font-size-big);
+  color: var(--color-white);
+  font-weight: 700;
+  line-height: 1.22;
+  margin-bottom: 12rem;
+}
+
+.text {
+  font-size: var(--font-size-small);
+  color: var(--color-gray-2);
+  font-weight: 400;
+}
