@@ -5,7 +5,8 @@ import BackgroundItems from "./background-items/background-items";
 import { Header, Footer, Opening  } from "../sections";
 import FixedContacts from "../common/fixed-contacts/fixed-contacts";
 
-export default function IndexPageLayout({ children }) {
+export default function IndexPageLayout({ children, openFormPopupHandler }) {
+
   return (
     <div className={styles.page}>
       <BackgroundItems />
@@ -13,8 +14,8 @@ export default function IndexPageLayout({ children }) {
       <div className={styles.content}>
         
         <div className={styles.openingContainer}>
-          <Header />
-          <Opening />
+          <Header openFormPopupHandler={openFormPopupHandler}/>
+          <Opening openFormPopupHandler={openFormPopupHandler} />
           <div className={styles.blurredBubble}></div>
         </div>
 

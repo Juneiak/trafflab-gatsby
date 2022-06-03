@@ -7,7 +7,7 @@ import { partnersData } from "../../../misc/data";
 export default function PartnersMarquee() {
 
   return (
-    <section className={styles.partenrsMarquee}>
+    <section id='partners' className={styles.partenrsMarquee}>
       <div className={styles.content}>
 
         <h2 className={styles.title}>Партнёры и рекламодатели</h2>

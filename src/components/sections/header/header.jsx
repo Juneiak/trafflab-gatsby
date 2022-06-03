@@ -4,14 +4,14 @@ import Logo from "../../common/logo/logo";
 import NavList from "../../common/nav-list/nav-list";
 import AskQuestion from "../../common/ask-question/ask-question";
 
-export default function Header() {
+export default function Header({ openFormPopupHandler }) {
 
   return (
     <header className={styles.header}>
       <div className={styles.content}>
         <Logo />
         <NavList />
-        <AskQuestion />
+        <AskQuestion openFormPopupHandler={openFormPopupHandler}/>
       </div>
     </header>
   )

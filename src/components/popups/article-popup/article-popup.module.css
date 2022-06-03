@@ -1,0 +1,66 @@
+.articlePopup {
+  width: 836rem;
+  background-color: var(--color-dark-2);
+  border-radius: 20px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50rem 86rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 117rem 0 117rem;
+}
+
+.closeButton {
+  position: absolute;
+  top: 9rem;
+  right: 9rem;
+  background: 100% url(../../../images/icons/close.svg) no-repeat;
+  width: 32rem;
+  height: 32rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transition: var(--link-opacity-transition);
+}
+
+.closeButton:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.imageContainer {
+  width: 664rem;
+  height: 340rem;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 32rem;
+}
+
+.title {
+  font-size: var(--font-size-middle);
+  color: var(--color-white);
+  font-weight: 700;
+  font-family: var(--font-basic);
+  margin-bottom: 24rem;
+}
+
+.textContainer {
+
+}
+
+.text {
+  margin-bottom: 24rem;
+  font-size: var(--font-size-body-big);
+  color: var(--color-gray-2);
+  font-weight: 400;
+  font-family: var(--font-basic);
+  line-height: 1.625;
+}
+
+.text:last-child {
+  margin-bottom: 0;
+
+}

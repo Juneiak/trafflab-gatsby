@@ -27,6 +27,12 @@
   outline: none;
   padding: 0;
   border: 50%;
+  transition: var(--link-opacity-transition);
+}
+
+.upButton:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .upText {

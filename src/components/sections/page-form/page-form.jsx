@@ -11,19 +11,19 @@ export default function PageForm() {
   const [ nameValue, setNamavalue ] = React.useState('')
   const [ tgValue, setTgvalue ] = React.useState('')
 
-  const handleInputChange = ( setStateFunc ) => (evt) => setStateFunc(evt.target.value)
+  const handleInputChange = ( setStateFunc ) => (evt) => setStateFunc(evt.target.value);
   return (
     <section className={styles.pageForm}>
       <div className={styles.content}>
-        <form className={styles.form}>
+        <div className={styles.formContainer}>
           <div className={styles.textSvg} />
           <p className={styles.text}>Оставьте заявку и менеджер свяжется с вами в ближайшее время</p>
-          <fieldset className={styles.fieldset}>
+          <form className={styles.form}>
             <BasicInput placeholder='Имя' value={nameValue} onChange={handleInputChange(setNamavalue)} />
             <BasicInput placeholder='Telegram' value={tgValue} onChange={handleInputChange(setTgvalue)} />
             <ArrowButton handler={() => false}/>
-          </fieldset>
-        </form>
+          </form>
+        </div>
         <div className={styles.imageContainer}>
           <MediaImage image={image} image480={image480} />
         </div>

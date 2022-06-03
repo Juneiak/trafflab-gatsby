@@ -13,7 +13,7 @@
   border-radius: 40px;
 }
 
-.form {
+.formContainer{
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -40,7 +40,7 @@
   margin-bottom: 24rem;
 }
 
-.fieldset {
+.form {
   display: grid;
   grid-auto-flow: column;
   gap: 20rem;

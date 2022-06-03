@@ -13,7 +13,7 @@ import sortIcon from '../../../images/icons/sort.svg';
 import graphIcon from '../../../images/icons/graph-2.svg';
 import image from '../../../images/what-we-do/what-we-do.png'
 
-export default function WhatWeDo() {
+export default function WhatWeDo({openFormPopupHandler}) {
 
   return (
     <section className={styles.whatWeDo}>
@@ -34,7 +34,7 @@ export default function WhatWeDo() {
             <WhatWeDoCard icon={redCalendarIcon} text='Холд до 14 дней' />
           </ul>
           <div className={styles.buttonContainer}>
-            <BasicButton text='Присоединиться' handler={() => false}/>
+            <BasicButton text='Присоединиться' handler={openFormPopupHandler}/>
           </div>
         </div>
 

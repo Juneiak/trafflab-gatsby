@@ -4,10 +4,10 @@ import SectionContentLayout from "../../common/section-content-layout/section-co
 import BlogCard from "./blog-card/blog-card";
 import { blogArticlesData } from '../../../misc/data';
 
-export default function Blog() {
+export default function Blog({openArticlePopupHandler}) {
 
   return (
-    <section className={styles.blog}>
+    <section id="blog" className={styles.blog}>
       <SectionContentLayout
         titleSecondPart='блог'
         text='Актуальные новости, рекомендации по заливу, мануалы, инсайдерская информация из закрытых источников аффилейт-маркетинга. Читай блог TraffLab и будь в курсе всех событий рынка.'
@@ -18,7 +18,7 @@ export default function Blog() {
           {
             blogArticlesData.map((articleData, index) => (
               <li key={index} className={styles.listElement}>
-                <BlogCard data={articleData}/>
+                <BlogCard openHandler={openArticlePopupHandler} data={articleData}/>
               </li>
             ))
           }
