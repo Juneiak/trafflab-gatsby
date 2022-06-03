@@ -1,6 +1,6 @@
 .askQuestion {
   position: relative;
-
+  margin-left: 60rem;
 }
 
 .workTime {
@@ -28,4 +28,5 @@
 
 .askButton:hover {
   opacity: 0.8;
+  cursor: pointer;
 }

@@ -9,10 +9,11 @@
 .content {
   width: 1200rem;
   display: grid;
-  grid-template-columns: max-content 1fr max-content;
-  gap: 140rem;
+  grid-template-columns: max-content 678rem max-content;
   justify-items: center;
   padding-top: 25rem;
   padding-bottom: 25rem;
   align-items: center;
+  justify-content: start;
+  gap: 90rem;
 }

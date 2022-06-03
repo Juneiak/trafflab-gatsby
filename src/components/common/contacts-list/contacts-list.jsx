@@ -7,9 +7,9 @@ import ytImage from '../../../images/icons/youtube-2.svg';
 import instImage from '../../../images/icons/instagram-2.svg';
 import twitterImage from '../../../images/icons/twitter-2.svg';
 
-export default function ContactsList() {
+export default function ContactsList({ intoRow }) {
   return (
-    <ul className={styles.list}>
+    <ul style={intoRow && {flexDirection: 'row', height: 'auto'}} className={styles.list}>
       <IconLink icon={tgImage} linkTo='https://web.telegram.org/k/'/>
       <IconLink icon={fbImage} linkTo='https://ru-ru.facebook.com'/>
       <IconLink icon={ytImage} linkTo='https://www.youtube.com/'/>

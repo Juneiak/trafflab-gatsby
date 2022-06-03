@@ -6,6 +6,9 @@ import {
   WhatWeDo,
   Ecosystem,
   Blog,
+  PartnersMarquee,
+  Vacancies,
+  PageForm,
 } from '../components/sections';
 
 export default function IndexPage() {
@@ -17,6 +20,9 @@ export default function IndexPage() {
       <WhatWeDo />
       <Ecosystem />
       <Blog />
+      <PartnersMarquee />
+      <Vacancies />
+      <PageForm />
     </IndexPageLayout>
   )
 }

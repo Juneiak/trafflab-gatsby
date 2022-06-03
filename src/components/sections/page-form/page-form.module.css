@@ -1,0 +1,53 @@
+.pageForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  background-color: var(--color-dark-1);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  width: 1200rem;
+  border-radius: 40px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80rem 0rem 82rem 60rem;
+  box-sizing: border-box;
+}
+
+.textSvg {
+  width: 515rem;
+  height: 113rem;
+  margin-bottom: 16rem;
+  background-image: url(../../../images/misc/form-text.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text {
+  font-family: var(--font-basic);
+  font-size: var(--font-size-body-big);
+  color: var(--color-gray-2);
+  margin-bottom: 24rem;
+}
+
+.fieldset {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20rem;
+  border: none;
+}
+
+.imageContainer {
+  width: 533rem;
+  height: 400rem;
+}

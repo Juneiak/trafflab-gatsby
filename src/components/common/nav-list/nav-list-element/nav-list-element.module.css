@@ -1,11 +1,11 @@
 .listElement {
-  
+  color: inherit;
 }
 
 .link {
-  color: var(--color-gray-2);
   text-decoration: none;
   transition: var(--link-opacity-transition);
+  color: inherit;
 
   font-size: var(--font-size-body-big);
   font-family: var(--font-basic);

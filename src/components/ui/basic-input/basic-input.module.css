@@ -1,0 +1,15 @@
+.input {
+  border: 1rem solid var(--color-gray-2);
+  padding: 20rem 24rem;
+  color: var(--color-gray-2);
+  font-weight: 400;
+  font-size: var(--font-size-body-big);
+  font-family: var(--font-basic);
+  
+  height: 60rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  outline: none;
+  border-radius: 40px;
+}

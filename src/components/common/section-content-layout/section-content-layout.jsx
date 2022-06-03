@@ -3,17 +3,17 @@ import * as styles from './section-content-layout.module.css';
 
 export default function SectionContentLayout({
   children,
-  titleFirstPart,
   titleSecondPart,
   text,
-  textStyle
+  textStyle,
+  noMarginBottom,
 }) {
   return (
     <div className={styles.content}>
 
-      <div className={styles.textContainer}>
+      <div style={noMarginBottom ? {marginBottom: 0} : {}} className={styles.textContainer}>
         <h2 className={styles.title}>
-          {titleFirstPart}<br />
+          Traffic<br />
           <span style={{color: 'var(--color-red-1)'}}>{titleSecondPart}</span>
         </h2>
         <p className={styles.text} style={textStyle}>{text}</p>

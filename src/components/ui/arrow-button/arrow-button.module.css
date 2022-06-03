@@ -1,0 +1,24 @@
+.button {
+  background-color: var(--color-red-1);
+  border: none;
+  width: 60rem;
+  height: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.35s ease-out;
+}
+
+.button:hover {
+  background-color: var(--color-red-2);
+  cursor: pointer;
+}
+
+.icon {
+  width: 32rem;
+  height: 32rem;
+  background-size: 100%;
+  background-image: url(../../../images/icons/arrow-right.svg);
+  background-repeat: no-repeat;
+}
