@@ -10,8 +10,12 @@ export default function Header({ openFormPopupHandler, headerRef }) {
     <header ref={headerRef} className={styles.header}>
       <div className={styles.content}>
         <Logo />
-        <NavList />
-        <AskQuestion openFormPopupHandler={openFormPopupHandler}/>
+        <div className={styles.navContainer}><NavList /></div>
+        <div className={styles.burgerContainer}>
+          <AskQuestion openFormPopupHandler={openFormPopupHandler}/>
+          <button type="button" className={styles.burgerButton}></button>
+        </div>
+
       </div>
     </header>
   )

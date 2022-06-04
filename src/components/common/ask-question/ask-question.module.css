@@ -1,6 +1,5 @@
 .askQuestion {
   position: relative;
-  margin-left: 60rem;
 }
 
 .workTime {
@@ -29,4 +28,18 @@
 .askButton:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .workTime {
+    display: none;
+  }
+  .askButton {
+    position: relative;
+    top: 0;
+    right: 0;
+    font-size: var(--font-size-body-small);
+
+  }
+
 }

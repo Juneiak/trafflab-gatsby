@@ -1,4 +1,3 @@
-
 @import url(./fonts/helios-extra/helios-extra-font.css);
 
 html {
@@ -35,14 +34,18 @@ html {
 
 @media screen and (max-width: 480px) {
   :root {
-  /* relative to 320px */
-    --font-size-large: 4.9vw; /* 24px ? */
-    --font-size-big: 2.8vw; /* 40px */
-    --font-size-middle: 1.81vw ; /* 26px */
-    --font-size-small: 1.67vw; /* 24px */
-    --font-size-body-big: 1.12vw; /* 16px */
-    --font-size-body-middle: 0.96vw; /* 14px */
-    --font-size-body-small: 0.84vw; /* 12px */
+    /* relative to 320px */
+    --font-size-large: 64rem; /* 64px */
+    --font-size-big: 44rem; /* 44px */
+    --font-size-middle: 24rem; ; /* 24px */
+    --font-size-small: 18rem; /* 18px */
+    --font-size-body-big: 16rem; /* 16px */
+    --font-size-body-middle: 14rem; /* 14px */
+    --font-size-body-small: 12rem; /* 12px */
+  }
+
+  html {
+    font-size: calc(1vw / 3.2);
   }
 }
 
