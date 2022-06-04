@@ -1,9 +1,10 @@
 import * as React from "react"
 import * as styles from './vacancies.module.css';
 import SectionContentLayout from "../../common/section-content-layout/section-content-layout";
-import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { SplideSlide } from '@splidejs/react-splide';
 import VacanciesCard from "./vacancies-card/vacancies-card";
 import { vacanciesData } from '../../../misc/data';
+import SliderLayout from "../../common/slider-layout/slider-layout";
 
 export default function Vacancies() {
 
@@ -15,13 +16,13 @@ export default function Vacancies() {
         textStyle={{width: '1150rem'}}
       >
         <ul className={styles.list}>
-          {
-            vacanciesData.map((vacancyData, index) => (
-              <li key={index} className={styles.listElement}>
-                <VacanciesCard data={vacancyData}/>
-              </li>
-            ))
-          }
+          <SliderLayout>
+            {
+              vacanciesData.map((vacancyData, index) => (
+                <SplideSlide key={index}><VacanciesCard data={vacancyData}/></SplideSlide>
+              ))
+            }
+          </SliderLayout>
         </ul>
 
       </SectionContentLayout>

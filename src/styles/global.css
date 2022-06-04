@@ -1,4 +1,4 @@
-/* @import url(./fonts/helios/helios-font.css); */
+
 @import url(./fonts/helios-extra/helios-extra-font.css);
 
 html {
@@ -10,7 +10,6 @@ html {
   --color-white: #fff;
   --color-dark-1: #121212;
   --color-dark-2: #181818;
-
   --color-gray-1: #444444;
   --color-gray-2:#ADADAD;
 

@@ -1,11 +1,15 @@
-import * as React from "react";
 import '../../styles/global.css';
+import '@splidejs/react-splide/css/core';
+
+import * as React from "react";
 import * as styles from './index-page-layout.module.css';
 import BackgroundItems from "./background-items/background-items";
 import { Header, Footer, Opening  } from "../sections";
 import FixedContacts from "../common/fixed-contacts/fixed-contacts";
 
 export default function IndexPageLayout({ children, openFormPopupHandler }) {
+  const headerRef = React.useRef();
+  const smoothScrollToHeader = () => headerRef.current.scrollIntoView({behavior: 'smooth'});
 
   return (
     <div className={styles.page}>
@@ -14,7 +18,7 @@ export default function IndexPageLayout({ children, openFormPopupHandler }) {
       <div className={styles.content}>
         
         <div className={styles.openingContainer}>
-          <Header openFormPopupHandler={openFormPopupHandler}/>
+          <Header headerRef={headerRef} openFormPopupHandler={openFormPopupHandler}/>
           <Opening openFormPopupHandler={openFormPopupHandler} />
           <div className={styles.blurredBubble}></div>
         </div>
@@ -24,7 +28,7 @@ export default function IndexPageLayout({ children, openFormPopupHandler }) {
         </main>
         
         <Footer />
-        <FixedContacts />
+        <FixedContacts scrollHandler={smoothScrollToHeader} />
       </div>
 
     </div>

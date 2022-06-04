@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 1fr max-content;
   width: 1200rem;
-  border-radius: 40px;
+  border-radius: 40rem;
 }
 
 .formContainer{

@@ -6,13 +6,9 @@
 }
 
 .list {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 30rem;
+  display: flex;
+  align-self: flex-start;
+  position: relative;
   overflow: hidden;
-  width: 1440rem;
-}
-
-.listElement {
-
+  width: 1320rem;
 }

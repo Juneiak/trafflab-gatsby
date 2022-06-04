@@ -4,14 +4,15 @@ import CircledIconWrapper from "../circled-icon-wrapper/circled-icon-wrapper";
 import upArrowIcon from '../../../images/icons/arrow-up.svg'
 import ContactsList from "../contacts-list/contacts-list";
 
-export default function FixedContacts() {
+export default function FixedContacts({scrollHandler}) {
+
   return (
     <div className={styles.fixedContacts}>
       <div className={styles.listContainer}>
         <ContactsList />
       </div>
       <div className={styles.upArrow}>
-        <button className={styles.upButton}><CircledIconWrapper icon={upArrowIcon} /></button>  
+        <button onClick={scrollHandler} className={styles.upButton}><CircledIconWrapper icon={upArrowIcon} /></button>  
         <span className={styles.upText}>Наверх</span>
       </div>
     </div>

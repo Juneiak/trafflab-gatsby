@@ -1,7 +1,7 @@
 .articlePopup {
   width: 836rem;
   background-color: var(--color-dark-2);
-  border-radius: 20px;
+  border-radius: 20rem;
   position: relative;
 
   display: flex;
@@ -17,7 +17,8 @@
   position: absolute;
   top: 9rem;
   right: 9rem;
-  background: 100% url(../../../images/icons/close.svg) no-repeat;
+  background: url(../../../images/icons/close.svg) no-repeat center;
+  background-size: 32rem 32rem;
   width: 32rem;
   height: 32rem;
   border: none;
@@ -34,7 +35,7 @@
 .imageContainer {
   width: 664rem;
   height: 340rem;
-  border-radius: 16px;
+  border-radius: 16rem;
   overflow: hidden;
   margin-bottom: 32rem;
 }

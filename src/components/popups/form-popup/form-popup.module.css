@@ -3,7 +3,7 @@
   background-color: var(--color-dark-2);
   position: relative;
   margin-top: 87rem;
-  border-radius: 20px;
+  border-radius: 20rem;
   overflow: hidden;
   padding: 74rem 86rem 64rem;
   box-sizing: border-box;
@@ -13,7 +13,8 @@
   position: absolute;
   top: 9rem;
   right: 9rem;
-  background: 100% url(../../../images/icons/close.svg) no-repeat;
+  background: url(../../../images/icons/close.svg) no-repeat center;
+  background-size: 32rem 32rem;
   width: 32rem;
   height: 32rem;
   border: none;

@@ -2,16 +2,12 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  padding-bottom: 177rem;
 }
 
 .list {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 30rem;
+  display: flex;
+  align-self: flex-start;
+  position: relative;
   overflow: hidden;
-  padding: 32rem 0 267rem;
-  width: 1440rem;
-}
-
-.listElement {
 }

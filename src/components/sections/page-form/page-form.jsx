@@ -21,7 +21,7 @@ export default function PageForm() {
           <form className={styles.form}>
             <BasicInput placeholder='Имя' value={nameValue} onChange={handleInputChange(setNamavalue)} />
             <BasicInput placeholder='Telegram' value={tgValue} onChange={handleInputChange(setTgvalue)} />
-            <ArrowButton handler={() => false}/>
+            <ArrowButton direction='right' handler={() => false}/>
           </form>
         </div>
         <div className={styles.imageContainer}>

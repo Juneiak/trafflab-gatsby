@@ -3,6 +3,8 @@ import * as styles from './blog.module.css';
 import SectionContentLayout from "../../common/section-content-layout/section-content-layout";
 import BlogCard from "./blog-card/blog-card";
 import { blogArticlesData } from '../../../misc/data';
+import SliderLayout from "../../common/slider-layout/slider-layout";
+import { SplideSlide } from '@splidejs/react-splide';
 
 export default function Blog({openArticlePopupHandler}) {
 
@@ -15,13 +17,13 @@ export default function Blog({openArticlePopupHandler}) {
         noMarginBottom={true}
       >
         <ul className={styles.list}>
-          {
-            blogArticlesData.map((articleData, index) => (
-              <li key={index} className={styles.listElement}>
-                <BlogCard openHandler={openArticlePopupHandler} data={articleData}/>
-              </li>
-            ))
-          }
+          <SliderLayout>
+            {
+              blogArticlesData.map((articleData, index) => (
+                <SplideSlide key={index}><BlogCard openHandler={openArticlePopupHandler} data={articleData}/></SplideSlide>
+              ))
+            }
+          </SliderLayout>
         </ul>
       </SectionContentLayout>
     </section>

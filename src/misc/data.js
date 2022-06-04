@@ -33,7 +33,22 @@ const blogArticlesData = [
     image: blogArticleImage4,
     title: 'IT мероприятия в Москве и онлайне',
     text: 'Чего вы хотите достичь или избежать? Ответы на эти вопросы — это ваши задачи. Как вы собираетесь добиваться желаемых...'
-  }
+  },
+  {
+    image: blogArticleImage1,
+    title: 'IT мероприятия в Москве и онлайне',
+    text: 'Чего вы хотите достичь или избежать? Ответы на эти вопросы — это ваши задачи. Как вы собираетесь добиваться желаемых...'
+  },
+  {
+    image: blogArticleImage2,
+    title: 'IT мероприятия в Москве и онлайне',
+    text: 'Чего вы хотите достичь или избежать? Ответы на эти вопросы — это ваши задачи. Как вы собираетесь добиваться желаемых...'
+  },
+  {
+    image: blogArticleImage3,
+    title: 'Создайте свою стратегию победы',
+    text: 'Хотите программировать, но не знаете с чего начать? Начните с бесплатного интенсива, где вы попробуете себя в роли Data Scientist...'
+  },
 ]
 
 const countriesData = [
@@ -120,9 +135,45 @@ const vacanciesData = [
   },
 ]
 
+const ecosystemCardsData = [
+  {
+    cardClass: 'labCard',
+    linkTo: '#lab',
+  },
+  {
+    cardClass: 'edCard',
+    linkTo: '#education',
+  },
+  {
+    cardClass: 'appsCard',
+    linkTo: '#apps',
+  },
+  {
+    cardClass: 'cryptCard',
+    linkTo: '#crypt',
+  },
+  {
+    cardClass: 'merchCard',
+    linkTo: '#merch',
+  },
+  {
+    cardClass: 'labCard',
+    linkTo: '#lab',
+  },
+  {
+    cardClass: 'edCard',
+    linkTo: '#education',
+  },
+  {
+    cardClass: 'appsCard',
+    linkTo: '#apps',
+  },
+]
+
 export {
   blogArticlesData,
   countriesData,
   partnersData,
   vacanciesData,
+  ecosystemCardsData,
 }
