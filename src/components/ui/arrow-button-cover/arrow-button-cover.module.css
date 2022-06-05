@@ -29,6 +29,18 @@
   width: 32rem;
   height: 32rem;
   background-image: url(../../../images/icons/arrow-up.svg);
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 480px) {
+  .button {
+    border: none;
+    width: 32rem;
+    height: 32rem;
+  }
+  .icon {
+    width: 16rem;
+    height: 16rem;
+  }
 }

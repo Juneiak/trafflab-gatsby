@@ -13,6 +13,11 @@ export default function SliderLayout({ children }) {
     drag: 'free',
     snap: true,
     trimSpace: false,
+    breakpoints: {
+      480: {
+        gap: '20rem',
+      },
+    }
   }
 
   return (

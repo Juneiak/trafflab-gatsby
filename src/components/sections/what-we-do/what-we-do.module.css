@@ -15,7 +15,6 @@
 .imageContainer {
   width: 581rem;
   height: 577rem;
-  
 }
 
 .textContainer {
@@ -29,6 +28,8 @@
   font-family: var(--font-basic);
   font-weight: 700;
   width: 400rem;
+  line-height: 1.22;
+
 }
 
 .list {
@@ -41,4 +42,48 @@
 
 .buttonContainer {
   width: 234rem;
+}
+
+@media screen and (max-width: 480px) {
+  .whatWeDo {
+    padding-bottom: 110rem;
+  }
+  
+  .content {
+    width: 280rem;
+    grid-template-columns: auto;
+    gap: 32rem;
+  }
+
+  .imageContainer {
+    width: 280rem;
+    height: 280rem;
+  }
+
+  .title {
+    margin-bottom: 24rem;
+    font-size: var(--font-size-middle);
+    line-height: 1.4;
+    width: max-content;
+  }
+
+  .textContainer {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .list {
+    margin-bottom: 32rem;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 17rem;
+  }
+  
+  .buttonContainer {
+    width: 177rem;
+    align-self: center;
+  }
 }

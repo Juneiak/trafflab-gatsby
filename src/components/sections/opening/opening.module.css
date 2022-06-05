@@ -45,7 +45,7 @@
 
 @media screen and (max-width: 480px) {
   .content {
-    width: 290rem;
+    width: 280rem;
     justify-content: center;
     align-items: flex-start;
   }

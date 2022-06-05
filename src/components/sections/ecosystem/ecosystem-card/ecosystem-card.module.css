@@ -83,3 +83,17 @@
 .merchCard:hover .logo {
   background-image: url(../../../../images/logos/merch-hover.svg);
 }
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 130rem;
+    height: 130rem;
+    padding: 24rem;
+    border-radius: 20px;
+  }
+
+  .logo {
+    width: 79rem;
+    height: 79rem;
+  }
+}

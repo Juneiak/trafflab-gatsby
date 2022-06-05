@@ -12,3 +12,14 @@
   overflow: hidden;
   width: 1320rem;
 }
+
+@media screen and (max-width: 480px) {
+  .vacancies {
+    padding-bottom: 46rem;
+  }
+
+  .list {
+    width: 300rem;
+
+  }
+}

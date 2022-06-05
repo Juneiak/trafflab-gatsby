@@ -28,13 +28,13 @@ export default function IndexPage() {
     <>
       <IndexPageLayout openFormPopupHandler={openFormPopup}>
         <CountriesMarquee />
-        {/* <TrafficSources />
+        <TrafficSources />
         <WhatWeDo openFormPopupHandler={openFormPopup}/>
         <Ecosystem />
         <Blog openArticlePopupHandler={openArticlePopup}/>
         <PartnersMarquee />
         <Vacancies />
-        <PageForm /> */}
+        {/* <PageForm /> */}
       </IndexPageLayout>
 
       <ArticlePopup isOpen={articlePopupOpen} closeHandler={closeArticlePopup} />

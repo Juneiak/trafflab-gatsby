@@ -11,3 +11,9 @@
   position: relative;
   overflow: hidden;
 }
+
+@media screen and (max-width: 480px) {
+  .blog {
+    padding-bottom: 65rem;
+  }
+}
