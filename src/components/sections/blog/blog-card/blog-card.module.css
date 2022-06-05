@@ -72,8 +72,8 @@
   max-height: 50rem;
   width: 100%;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 
@@ -115,8 +115,8 @@
   .text {
     font-size: var(--font-size-body-small);
     color: var(--color-gray-2);
-    line-height: 1.14;
-    max-height: 32rem;
+    line-height: 1.33;
+    max-height: 30rem;
 
     display: -webkit-box;
     -webkit-line-clamp: 2;

@@ -14,7 +14,7 @@ src: local('Helios Extra Regular'), local('Helios-Extra-Regular'),
     url('HeliosExtC.woff2') format('woff2'),
     url('HeliosExtC.woff') format('woff'),
     url('HeliosExtC.ttf') format('truetype');
-font-weight: 400;
+font-weight: 300;
 font-style: normal;
 }
 

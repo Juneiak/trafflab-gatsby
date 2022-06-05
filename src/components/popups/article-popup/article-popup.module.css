@@ -57,14 +57,14 @@
 }
 
 .textContainer {
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .text {
   margin-bottom: 24rem;
   font-size: var(--font-size-body-big);
   color: var(--color-gray-2);
-  font-weight: 400;
+  font-weight: 300;
   font-family: var(--font-basic);
   line-height: 1.625;
   overflow-wrap: break-word!;

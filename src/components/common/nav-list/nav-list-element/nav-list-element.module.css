@@ -9,7 +9,7 @@
 
   font-size: var(--font-size-body-big);
   font-family: var(--font-basic);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .link:hover {

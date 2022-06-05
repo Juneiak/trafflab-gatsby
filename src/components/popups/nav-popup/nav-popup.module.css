@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   align-items: center;
 }
 
@@ -47,7 +47,7 @@
 
 .list {
   display: grid;
-  gap: 34rem;
+  gap: 30rem;
   justify-items: center;
 }
 

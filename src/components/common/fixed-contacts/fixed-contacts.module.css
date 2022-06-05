@@ -4,8 +4,6 @@
   top: 258rem;
   left: 40rem;
   z-index: 2;
-  /* height: max-content;
-  width: max-content; */
 }
 
 .listContainer {
@@ -23,7 +21,7 @@
 
 .upButton {
   background-color: transparent;
-  border: 0;
+  border: none;
   outline: none;
   padding: 0;
   border: 50%;
@@ -42,7 +40,13 @@
   color: var(--color-white);
   font-size: var(--font-size-body-small);
   font-family: var(--font-basic);
-  font-weight: 400;
+  font-weight: 300;
   transform: rotate(-90deg);
   line-height: 0.8;
+}
+
+@media screen and (max-width: 480px) {
+  .fixedContacts {
+    display: none;
+  }
 }

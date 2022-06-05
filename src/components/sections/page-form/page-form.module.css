@@ -46,6 +46,7 @@
   grid-auto-flow: column;
   gap: 20rem;
   border: none;
+  width: 100%;
 }
 
 .imageContainer {
@@ -58,6 +59,7 @@
   .content {
     grid-template-columns: 1fr;
     width: 280rem;
+    border-radius: 20rem;
   }
 
   .formContainer{

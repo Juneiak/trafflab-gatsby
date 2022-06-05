@@ -3,17 +3,16 @@ import React from "react";
 export default function useMediaMatch(media) {
   const [isMatch, setIsMatch] = React.useState(false);
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     const handleMediaChange = (evt) => {
       if (evt.matches !== isMatch) setIsMatch(evt.matches)
     }
     const mediaQuire = window.matchMedia(media);
-    
-    mediaQuire.addEventListener('change', handleMediaChange)
     handleMediaChange(mediaQuire)
+    mediaQuire.addEventListener('change', handleMediaChange)
     
     return () => mediaQuire.removeEventListener('change', handleMediaChange)
-  }, [media]);
+  }, []);
 
   return isMatch;
 }

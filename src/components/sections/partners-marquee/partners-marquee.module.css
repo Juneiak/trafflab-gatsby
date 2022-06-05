@@ -28,6 +28,7 @@
 .list {
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .listElement {
@@ -45,11 +46,12 @@
   
   .title {
     width: 280rem;
-    font-size: var(--font-size-middle);
+    font-size: var(--font-size-small);
     margin-bottom: 17rem;
   }
   
   .list {
+    
   }
   
   .listElement {
