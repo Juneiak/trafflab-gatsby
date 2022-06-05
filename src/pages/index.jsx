@@ -11,12 +11,16 @@ import {
   PageForm,
 } from '../components/sections';
 
-import { FormPopup, ArticlePopup } from "../components/popups";
+import { FormPopup, ArticlePopup, NavPopup } from "../components/popups";
 
 export default function IndexPage() {
 
   const [ articlePopupOpen, setArticlePopupOpen ] = React.useState(false);
   const [ formPopupOpen, setFormPopupOpen ] = React.useState(false);
+  const [ navPopupOpen, setNavPopupOpen ] = React.useState(false);
+
+  const openNavPopup = () =>  setNavPopupOpen(true);
+  const closeNavPopup = () => setNavPopupOpen(false);
 
   const openFormPopup = () =>  setFormPopupOpen(true);
   const closeFormPopup = () => setFormPopupOpen(false);
@@ -26,7 +30,7 @@ export default function IndexPage() {
 
   return (
     <>
-      <IndexPageLayout openFormPopupHandler={openFormPopup}>
+      <IndexPageLayout openNavPopupHandler={openNavPopup}  openFormPopupHandler={openFormPopup}>
         <CountriesMarquee />
         <TrafficSources />
         <WhatWeDo openFormPopupHandler={openFormPopup}/>
@@ -34,11 +38,13 @@ export default function IndexPage() {
         <Blog openArticlePopupHandler={openArticlePopup}/>
         <PartnersMarquee />
         <Vacancies />
-        {/* <PageForm /> */}
+        <PageForm />
       </IndexPageLayout>
 
       <ArticlePopup isOpen={articlePopupOpen} closeHandler={closeArticlePopup} />
       <FormPopup isOpen={formPopupOpen} closeHandler={closeFormPopup}/>
+      <NavPopup isOpen={navPopupOpen} closeHandler={closeNavPopup}/>
+
     </>
   )
 }

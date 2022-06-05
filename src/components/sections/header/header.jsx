@@ -4,7 +4,7 @@ import Logo from "../../common/logo/logo";
 import NavList from "../../common/nav-list/nav-list";
 import AskQuestion from "../../common/ask-question/ask-question";
 
-export default function Header({ openFormPopupHandler, headerRef }) {
+export default function Header({ openFormPopupHandler, headerRef, openNavPopupHandler }) {
 
   return (
     <header ref={headerRef} className={styles.header}>
@@ -13,7 +13,7 @@ export default function Header({ openFormPopupHandler, headerRef }) {
         <div className={styles.navContainer}><NavList /></div>
         <div className={styles.burgerContainer}>
           <AskQuestion openFormPopupHandler={openFormPopupHandler}/>
-          <button type="button" className={styles.burgerButton}></button>
+          <button onClick={openNavPopupHandler} type="button" className={styles.burgerButton}></button>
         </div>
 
       </div>

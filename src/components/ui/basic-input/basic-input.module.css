@@ -12,4 +12,15 @@
   background-color: transparent;
   outline: none;
   border-radius: 40rem;
+  line-height: 1.3;
+}
+
+@media screen and (max-width: 480px) {
+  .input {
+    padding: 9rem 24rem;
+    font-size: var(--font-size-body-middle);
+    height: 40rem;
+    line-height: 1.55;
+
+  }
 }

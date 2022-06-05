@@ -7,14 +7,14 @@ import ytImage from '../../../images/icons/youtube-2.svg';
 import instImage from '../../../images/icons/instagram-2.svg';
 import twitterImage from '../../../images/icons/twitter-2.svg';
 
-export default function ContactsList({ intoRow }) {
+export default function ContactsList({ intoRow, isSmall }) {
   return (
-    <ul style={intoRow && {flexDirection: 'row', height: 'auto'}} className={styles.list}>
-      <IconLink icon={tgImage} linkTo='https://web.telegram.org/k/'/>
-      <IconLink icon={fbImage} linkTo='https://ru-ru.facebook.com'/>
-      <IconLink icon={ytImage} linkTo='https://www.youtube.com/'/>
-      <IconLink icon={instImage} linkTo='https://www.instagram.com'/>
-      <IconLink icon={twitterImage} linkTo='https://twitter.com'/>
+    <ul style={intoRow && {flexDirection: 'row', height: 'auto'}} className={`${styles.list} ${isSmall ? styles.isSmall : ''}`}>
+      <IconLink isSmall={isSmall} icon={tgImage} linkTo='https://web.telegram.org/k/'/>
+      <IconLink isSmall={isSmall} icon={fbImage} linkTo='https://ru-ru.facebook.com'/>
+      <IconLink isSmall={isSmall} icon={ytImage} linkTo='https://www.youtube.com/'/>
+      <IconLink isSmall={isSmall} icon={instImage} linkTo='https://www.instagram.com'/>
+      <IconLink isSmall={isSmall} icon={twitterImage} linkTo='https://twitter.com'/>
     </ul>
   )
 }

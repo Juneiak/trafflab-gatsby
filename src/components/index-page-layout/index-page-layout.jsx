@@ -9,19 +9,22 @@ import FixedContacts from "../common/fixed-contacts/fixed-contacts";
 import MediaImage from '../ui/media-image/media-image';
 import bubble1 from '../../images/background-elements/blurred-circle-1.png';
 import bubble2_480 from '../../images/background-elements/blurred-circle-1-480.png';
+import useMediaMatch from '../../hooks/use-media-match';
 
-export default function IndexPageLayout({ children, openFormPopupHandler }) {
+export default function IndexPageLayout({ children, openFormPopupHandler, openNavPopupHandler }) {
   const headerRef = React.useRef();
+  const is480 = useMediaMatch('(max-width: 480px)');
+
   const smoothScrollToHeader = () => headerRef.current.scrollIntoView({behavior: 'smooth'});
 
   return (
     <div className={styles.page}>
-      {/* <BackgroundItems /> */}
+      <BackgroundItems />
       
       <div className={styles.content}>
         
         <div className={styles.openingContainer}>
-          <Header headerRef={headerRef} openFormPopupHandler={openFormPopupHandler}/>
+          <Header headerRef={headerRef} openNavPopupHandler={openNavPopupHandler} openFormPopupHandler={openFormPopupHandler}/>
           <Opening openFormPopupHandler={openFormPopupHandler} />
           <div className={styles.blurredBubbleContainer}><MediaImage image={bubble1} image480={bubble2_480}/></div>
         </div>
@@ -30,8 +33,8 @@ export default function IndexPageLayout({ children, openFormPopupHandler }) {
           { children }
         </main>
         
-        {/* <Footer /> */}
-        {/* <FixedContacts scrollHandler={smoothScrollToHeader} /> */}
+        <Footer />
+        {!is480 && <FixedContacts scrollHandler={smoothScrollToHeader} />}
       </div>
 
     </div>

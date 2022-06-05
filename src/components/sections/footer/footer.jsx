@@ -6,9 +6,11 @@ import ContactsList from '../../common/contacts-list/contacts-list';
 import CircledIconWrapper from '../../common/circled-icon-wrapper/circled-icon-wrapper';
 import mailIcon from '../../../images/icons/mail.svg';
 import skypeIcon from '../../../images/icons/skype.svg';
-
+import useMediaMatch from "../../../hooks/use-media-match";
 
 export default function Footer() {
+  const is480 = useMediaMatch('(max-width: 480px)');
+
   let year
 
   React.useEffect(() => {
@@ -25,15 +27,15 @@ export default function Footer() {
         <p className={styles.year}>{year} © TraffLab. Все права защищены.</p>
 
         <div className={styles.contactsContainer}>
-          <ContactsList intoRow={true} />
+          <ContactsList intoRow={true} isSmall={is480} />
           <ul className={styles.otherContactslist}>
 
             <li className={styles.listEement}>
-              <CircledIconWrapper icon={mailIcon} />
+              <CircledIconWrapper isSmall={is480} icon={mailIcon} />
               <p className={styles.contact}>admin@trafflab.com</p>
             </li>
             <li className={styles.listEement}>
-              <CircledIconWrapper icon={skypeIcon} />
+              <CircledIconWrapper isSmall={is480} icon={skypeIcon} />
               <p className={styles.contact}>dmitry@trafflab.com</p>
             </li>
 
