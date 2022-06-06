@@ -9,7 +9,7 @@ import { SplideSlide } from '@splidejs/react-splide';
 export default function Ecosystem() {
 
   return (
-    <section id='eco-system' className={styles.ecosystem}>
+    <section id='ecosystem' className={styles.ecosystem}>
       <SectionContentLayout
         titleSecondPart='ecosystem'
         text='Ad-Tech платформа Trafflab - это готовое решение для специалиста любого уровня. Мы можем научить лить трафик с нуля и пробить потолок твоего дохода. Экосистема подстраивается под новичов и опытных вебов и решает любую задачу вебмастера.'

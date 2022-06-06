@@ -3,12 +3,23 @@ module.exports = {
     title: `trafflab-gatsby`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sharp", "gatsby-transformer-sharp", 
+  {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
       "path": "./src/images/"
     },
     __key: "images"
-  }]
+  },
+  {
+    resolve: `gatsby-plugin-i18n`,
+    options: {
+      langKeyDefault: 'en',
+      langKeyForNull: 'en',
+      useLangKeyLayout: false,
+      prefixDefault: true,
+    },
+  },
+]
 };

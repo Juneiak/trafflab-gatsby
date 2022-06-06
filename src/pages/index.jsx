@@ -1,50 +1,32 @@
-import * as React from "react";
-import IndexPageLayout from "../components/index-page-layout/index-page-layout";
-import {
-  CountriesMarquee,
-  TrafficSources,
-  WhatWeDo,
-  Ecosystem,
-  Blog,
-  PartnersMarquee,
-  Vacancies,
-  PageForm,
-} from '../components/sections';
+import React, { useEffect } from "react";
+import { navigate } from "gatsby";
 
-import { FormPopup, ArticlePopup, NavPopup } from "../components/popups";
+const getRedirectLanguage = () => {
+  if (typeof navigator === `undefined`) {
+    return "en";
+  }
 
-export default function IndexPage() {
+  const lang = navigator && navigator.language && navigator.language.split("-")[0];
+  if (!lang) return "en";
 
-  const [ articlePopupOpen, setArticlePopupOpen ] = React.useState(false);
-  const [ formPopupOpen, setFormPopupOpen ] = React.useState(false);
-  const [ navPopupOpen, setNavPopupOpen ] = React.useState(false);
+  switch (lang) {
+    case "ru":
+      return "ru";
+      case "uk":
+        return "uk";
+    default:
+      return "en";
+  }
+};
 
-  const openNavPopup = () =>  setNavPopupOpen(true);
-  const closeNavPopup = () => setNavPopupOpen(false);
+const IndexPage = () => {
+  useEffect(() => {
+    const urlLang = getRedirectLanguage();
 
-  const openFormPopup = () =>  setFormPopupOpen(true);
-  const closeFormPopup = () => setFormPopupOpen(false);
+    navigate(`/${urlLang}/`, {replace: true});
+  }, []);
 
-  const openArticlePopup = () =>  setArticlePopupOpen(true);
-  const closeArticlePopup = () => setArticlePopupOpen(false);
+  return null;
+};
 
-  return (
-    <>
-      <IndexPageLayout openNavPopupHandler={openNavPopup}  openFormPopupHandler={openFormPopup}>
-        <CountriesMarquee />
-        <TrafficSources />
-        <WhatWeDo openFormPopupHandler={openFormPopup}/>
-        <Ecosystem />
-        <Blog openArticlePopupHandler={openArticlePopup}/>
-        <PartnersMarquee />
-        <Vacancies />
-        <PageForm />
-      </IndexPageLayout>
-
-      <ArticlePopup isOpen={articlePopupOpen} closeHandler={closeArticlePopup} />
-      <FormPopup isOpen={formPopupOpen} closeHandler={closeFormPopup}/>
-      <NavPopup isOpen={navPopupOpen} closeHandler={closeNavPopup}/>
-
-    </>
-  )
-}
+export default IndexPage;

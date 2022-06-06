@@ -5,6 +5,7 @@
   justify-content: center;
   padding-bottom: 25rem;
   z-index: 2;
+  position: relative;
 }
 
 .content {
@@ -28,6 +29,22 @@
 .burgerButton {
   display: none;
 }
+
+
+.langLinksContainer {
+  position: absolute;
+  top: 0;
+  right: 50rem;
+  display: grid;
+  gap: 5rem;
+}
+
+.link {
+  font-size: 25rem;
+  text-decoration: none;
+  line-height: 1;
+}
+
 
 @media screen and (max-width: 480px) {
 

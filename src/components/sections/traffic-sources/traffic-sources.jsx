@@ -15,7 +15,7 @@ import unityImage from '../../../images/traffic-sources-images/unity.png';
 export default function TrafficSources() {
 
   return (
-    <section id='web-master' className={styles.trafficSources}>
+    <section id='sources' className={styles.trafficSources}>
       <SectionContentLayout
         titleFirstPart='Traffic'
         titleSecondPart='Sources'

@@ -2,11 +2,11 @@ import * as React from "react"
 import * as styles from './opening.module.css';
 import BasicButton from "../../ui/basic-button/basic-button";
 import OpeningImage from "./opening-image/opening-image";
-import useMediaMatch from "../../../hooks/use-media-match";
+import { Is480Context } from "../../../utils/contexts";
 
 export default function Opening({openFormPopupHandler}) {
-  const is480 = useMediaMatch('(max-width: 480px)');
 
+  const is480 = React.useContext(Is480Context)
   return (
     <section id='opening' className={styles.opening}>
       <div className={styles.content}>

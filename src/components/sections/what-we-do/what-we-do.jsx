@@ -3,7 +3,7 @@ import * as styles from './what-we-do.module.css';
 import WhatWeDoCard from "./what-we-do-card/what-we-do-card";
 import MediaImage from '../../ui/media-image/media-image'
 import BasicButton from "../../ui/basic-button/basic-button";
-import useMediaMatch from "../../../hooks/use-media-match";
+import { Is480Context } from "../../../utils/contexts";
 
 import phoneIcon from '../../../images/icons/phone-1.svg';
 import calendarIcon from '../../../images/icons/calendar-1.svg';
@@ -16,7 +16,7 @@ import image from '../../../images/what-we-do/what-we-do.png';
 import image_480 from '../../../images/what-we-do/what-we-do-480.png';
 
 export default function WhatWeDo({openFormPopupHandler}) {
-  const is480 = useMediaMatch('(max-width: 480px)');
+  const is480 = React.useContext(Is480Context);
 
   return (
     <section className={styles.whatWeDo}>

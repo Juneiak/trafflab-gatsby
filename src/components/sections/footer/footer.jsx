@@ -6,10 +6,10 @@ import ContactsList from '../../common/contacts-list/contacts-list';
 import CircledIconWrapper from '../../common/circled-icon-wrapper/circled-icon-wrapper';
 import mailIcon from '../../../images/icons/mail.svg';
 import skypeIcon from '../../../images/icons/skype.svg';
-import useMediaMatch from "../../../hooks/use-media-match";
+import { Is480Context } from "../../../utils/contexts";
 
 export default function Footer() {
-  const is480 = useMediaMatch('(max-width: 480px)');
+  const is480 = React.useContext(Is480Context)
 
   let year
 

@@ -6,8 +6,8 @@ export default function NavList({ isFooter=false }) {
   return (
     <nav className={styles.nav}>
       <ul style={{color: [isFooter ? 'var(--color-white)' : 'var(--color-gray-2)']}} className={styles.list}>
-        <NavListElement text='Веб-мастер' linkTo='#web-master' isFooter={isFooter} />
-        <NavListElement text='Эко-система' linkTo='#eco-system' isFooter={isFooter} />
+        <NavListElement text='sources' linkTo='#sources' isFooter={isFooter} />
+        <NavListElement text='Экосистема' linkTo='#ecosystem' isFooter={isFooter} />
         <NavListElement text='Блог' linkTo='#blog' isFooter={isFooter} />
         <NavListElement text='Партнёры' linkTo='#partners' isFooter={isFooter} />
         <NavListElement text='Вакансии' linkTo='#vacancies' isFooter={isFooter} />

@@ -24,7 +24,7 @@
   border: none;
   outline: none;
   padding: 0;
-  border: 50%;
+  border-radius: 50%;
   transition: var(--link-opacity-transition);
 }
 
@@ -43,10 +43,4 @@
   font-weight: 300;
   transform: rotate(-90deg);
   line-height: 0.8;
-}
-
-@media screen and (max-width: 480px) {
-  .fixedContacts {
-    display: none;
-  }
 }
