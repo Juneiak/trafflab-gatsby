@@ -1,17 +1,19 @@
 import * as React from "react"
 import * as styles from './nav-list.module.css';
 import NavListElement from "./nav-list-element/nav-list-element";
+import { LangContext } from "../../../utils/contexts";
 
 export default function NavList({ isFooter=false }) {
+  const data = React.useContext(LangContext).navList
   return (
     <nav className={styles.nav}>
       <ul style={{color: [isFooter ? 'var(--color-white)' : 'var(--color-gray-2)']}} className={styles.list}>
-        <NavListElement text='sources' linkTo='#sources' isFooter={isFooter} />
-        <NavListElement text='Экосистема' linkTo='#ecosystem' isFooter={isFooter} />
-        <NavListElement text='Блог' linkTo='#blog' isFooter={isFooter} />
-        <NavListElement text='Партнёры' linkTo='#partners' isFooter={isFooter} />
-        <NavListElement text='Вакансии' linkTo='#vacancies' isFooter={isFooter} />
-        { !isFooter && <NavListElement text='Контакты' linkTo='#contacts' isFooter={isFooter} />}
+        <NavListElement text={data.sources} linkTo='#sources' isFooter={isFooter} />
+        <NavListElement text={data.ecosystem} linkTo='#ecosystem' isFooter={isFooter} />
+        <NavListElement text={data.blog} linkTo='#blog' isFooter={isFooter} />
+        <NavListElement text={data.partners} linkTo='#partners' isFooter={isFooter} />
+        <NavListElement text={data.vacancies} linkTo='#vacancies' isFooter={isFooter} />
+        { !isFooter && <NavListElement text={data.contacts} linkTo='#contacts' isFooter={isFooter} />}
       </ul>
     </nav>
   )

@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as styles from './countries-marquee.module.css';
 import Marquee from "react-fast-marquee";
-import { countriesData } from "../../../misc/data";
+import { countriesData } from "../../../misc/common-data";
 
 export default function CountriesMarquee() {
 

@@ -11,15 +11,17 @@ import seoImage from '../../../images/traffic-sources-images/seo.png';
 import ttImage from '../../../images/traffic-sources-images/tiktok.png';
 import uacImage from '../../../images/traffic-sources-images/uac.png';
 import unityImage from '../../../images/traffic-sources-images/unity.png';
+import { LangContext } from "../../../utils/contexts";
 
 export default function TrafficSources() {
+  const data = React.useContext(LangContext).trafficSourcesSection;
 
   return (
     <section id='sources' className={styles.trafficSources}>
       <SectionContentLayout
         titleFirstPart='Traffic'
         titleSecondPart='Sources'
-        text='Любой источник. Любое гео. Любые связки. Привлекай лиды – Trafflab сделает всё остальное.'
+        text={data.text}
         textStyle={{width: '550rem'}}
       >
         <ul className={styles.list}>
@@ -30,7 +32,7 @@ export default function TrafficSources() {
           <TrafficSourcesCard image={seoImage} title='SEO' />
           <TrafficSourcesCard isDownPosition={true} image={pcImage} title='PPC' />
           <TrafficSourcesCard image={asoImage} title='ASO' />
-          <TrafficSourcesCard isDownPosition={true} image={otherImage} title='Предложи свой' />
+          <TrafficSourcesCard isDownPosition={true} image={otherImage} title={data.yourOffer} />
         </ul>
       </SectionContentLayout>
     </section>

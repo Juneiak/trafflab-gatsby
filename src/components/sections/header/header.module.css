@@ -14,8 +14,7 @@
   grid-template-columns: max-content 678rem max-content;
   justify-items: center;
   align-items: center;
-  justify-content: start;
-  gap: 90rem;
+  justify-content: space-between;
 }
 
 .navContainer {
@@ -23,26 +22,11 @@
 }
 
 .burgerContainer {
-  margin-left: 60rem;
+  
 }
 
 .burgerButton {
   display: none;
-}
-
-
-.langLinksContainer {
-  position: absolute;
-  top: 0;
-  right: 50rem;
-  display: grid;
-  gap: 5rem;
-}
-
-.link {
-  font-size: 25rem;
-  text-decoration: none;
-  line-height: 1;
 }
 
 
@@ -82,6 +66,6 @@
     outline: none;
     padding: 0;
     margin: 0;
-    margin-left: 16rem;
+    margin-left: 10rem;
   }
 }

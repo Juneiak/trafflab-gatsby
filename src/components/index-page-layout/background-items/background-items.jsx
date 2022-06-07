@@ -21,25 +21,28 @@ import bubble5_480 from '../../../images/background-elements/blurred-circle-5-48
 import bubble6_480 from '../../../images/background-elements/blurred-circle-6-480.png'
 
 import MediaImage from "../../ui/media-image/media-image";
+import { LangContext } from "../../../utils/contexts";
 
 export default function BackgroundItems() {
+  const lang = React.useContext(LangContext).lang
+  const langPrefix =  lang !== 'ru' ? lang : ''
   return (
     <div className={styles.backgroundItems}>
-      <div className={styles.net1}><MediaImage image={netSvg} no480={true}/></div>
-      <div className={styles.net2}><MediaImage image={netSvg} no480={true}/></div>
-      <div className={styles.net3}><MediaImage image={netSvg} no480={true}/></div>
-      <div className={styles.net4}><MediaImage image={netSvg} no480={true}/></div>
+      <div className={`${styles.net1} ${styles['net1' + langPrefix]}`}><MediaImage image={netSvg} no480={true}/></div>
+      <div className={`${styles.net2} ${styles['net2' + langPrefix]}`}><MediaImage image={netSvg} no480={true}/></div>
+      <div className={`${styles.net3} ${styles['net3' + langPrefix]}`}><MediaImage image={netSvg} no480={true}/></div>
+      <div className={`${styles.net4} ${styles['net4' + langPrefix]}`}><MediaImage image={netSvg} no480={true}/></div>
 
-      <div className={styles.line1}><MediaImage image={lineToRight} image480={lineToRight_480}/></div>
-      <div className={styles.line2}><MediaImage image={lineToLeft} image480={lineToLeft_480}/></div>
-      <div className={styles.line3}><MediaImage image={lineToRight} image480={lineToRight_480}/></div>
-      <div className={styles.line4}><MediaImage image={lineToLeft} image480={lineToLeft_480}/></div>
-
-      <div className={styles.blurredBubble2}><MediaImage image={bubble2} image480={bubble2_480}/></div>
-      <div className={styles.blurredBubble3}><MediaImage image={bubble3} image480={bubble3_480}/></div>
-      <div className={styles.blurredBubble4}><MediaImage image={bubble4} image480={bubble4_480}/></div>
-      <div className={styles.blurredBubble5}><MediaImage image={bubble5} image480={bubble5_480}/></div>
-      <div className={styles.blurredBubble6}><MediaImage image={bubble6} image480={bubble6_480}/></div>
+      <div className={`${styles.line1} ${styles['line1' + langPrefix]}`}><MediaImage image={lineToRight} image480={lineToRight_480}/></div>
+      <div className={`${styles.line2} ${styles['line2' + langPrefix]}`}><MediaImage image={lineToLeft} image480={lineToLeft_480}/></div>
+      <div className={`${styles.line3} ${styles['line3' + langPrefix]}`}><MediaImage image={lineToRight} image480={lineToRight_480}/></div>
+      <div className={`${styles.line4} ${styles['line4' + langPrefix]}`}><MediaImage image={lineToLeft} image480={lineToLeft_480}/></div>
+      
+      <div className={`${styles.blurredBubble2} ${styles['blurredBubble2' + langPrefix]}`}><MediaImage image={bubble2} image480={bubble2_480}/></div>
+      <div className={`${styles.blurredBubble3} ${styles['blurredBubble3' + langPrefix]}`}><MediaImage image={bubble3} image480={bubble3_480}/></div>
+      <div className={`${styles.blurredBubble4} ${styles['blurredBubble4' + langPrefix]}`}><MediaImage image={bubble4} image480={bubble4_480}/></div>
+      <div className={`${styles.blurredBubble5} ${styles['blurredBubble5' + langPrefix]}`}><MediaImage image={bubble5} image480={bubble5_480}/></div>
+      <div className={`${styles.blurredBubble6} ${styles['blurredBubble6' + langPrefix]}`}><MediaImage image={bubble6} image480={bubble6_480}/></div>
 
     </div>
   )

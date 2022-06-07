@@ -15,6 +15,7 @@ import { Is480Context } from '../../utils/contexts';
 import useIs480 from '../../hooks/use-is-480';
 
 export default function IndexPageLayout({ children, openFormPopupHandler, openNavPopupHandler }) {
+  
   const headerRef = React.useRef();
   const is480 = useIs480()
   

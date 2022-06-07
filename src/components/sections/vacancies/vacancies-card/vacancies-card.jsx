@@ -8,7 +8,7 @@ export default function VacanciesCard({handler, data: {status, speciality, exper
       <div className={styles.textContainer}>
         <p className={styles.status}>{status}</p>
         <p className={styles.speciality}>{speciality}</p>
-        <p className={styles.experience}>{`Опыт: ${experience}`}</p>
+        <p className={styles.experience}>{experience}</p>
         <p className={styles.about}>{about}</p>
       </div>
       <button className={styles.button} onClick={handler} type='button'>Подробнее</button>

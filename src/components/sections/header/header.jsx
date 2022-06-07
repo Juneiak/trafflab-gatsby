@@ -3,7 +3,6 @@ import * as styles from './header.module.css';
 import Logo from "../../common/logo/logo";
 import NavList from "../../common/nav-list/nav-list";
 import AskQuestion from "../../common/ask-question/ask-question";
-import { Link } from "gatsby";
 
 export default function Header({ openFormPopupHandler, headerRef, openNavPopupHandler }) {
 
@@ -18,11 +17,7 @@ export default function Header({ openFormPopupHandler, headerRef, openNavPopupHa
         </div>
 
       </div>
-      <div className={styles.langLinksContainer}>
-        <Link className={styles.link} activeStyle={{display: 'none'}} to='/en/'>🇺🇸</Link>
-        <Link className={styles.link} activeStyle={{display: 'none'}} to='/uk/'>🇺🇦</Link>
-        <Link className={styles.link} activeStyle={{display: 'none'}} to='/ru'>🇷🇺</Link>
-      </div>
+
     </header>
   )
 }

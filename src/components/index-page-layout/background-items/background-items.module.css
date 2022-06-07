@@ -15,24 +15,28 @@
   top: 938rem;
   left: 0;
   width: 124rem;
+  z-index: 5;
   height: 150rem;
 }
 .net2 {
   top: 3020rem;
   left: 0;
   width: 124rem;
+  z-index: 5;
   height: 150rem;
 }
 .net3 {
   top: 3785rem;
   left: 0;
   width: 124rem;
+  z-index: 5;
   height: 150rem;
 }
 .net4 {
   top: 5035rem;
   left: 0;
   width: 124rem;
+  z-index: 5;
   height: 150rem;
 }
 
@@ -42,24 +46,32 @@
   left: 0;
   width: 1440rem;
   height: 91rem;
+  z-index: 5;
+
 }
 .line2 {
   top: 2852rem;
   left: 0;
   width: 1440rem;
   height: 91rem;
+  z-index: 5;
+
 }
 .line3 {
   top: 3640rem;
   left: 0rem;
   width: 1440rem;
   height: 91rem;
+  z-index: 5;
+
 }
 .line4 {
   top: 4650rem;
   left: 0rem;
   width: 1440rem;
   height: 91rem;
+  z-index: 5;
+
 }
 
 
@@ -118,37 +130,31 @@
     display: none;
   }
   
-  
 
   .line1 {
     top: 1433rem;
     left: 0;
     width: 320rem;
     height: 32rem;
-    z-index: 5;
   }
   .line2 {
     top: 2505rem;
     left: 0;
     width: 320rem;
     height: 32rem;
-    z-index: 5;
   }
   .line3 {
     top: 3015rem;
     left: 0rem;
     width: 320rem;
     height: 32rem;
-    z-index: 5;
   }
   .line4 {
     top: 3633rem;
     left: 0rem;
     width: 320rem;
     height: 32rem;
-    z-index: 5;
   }
-  
   
   
   .blurredBubble2 {
@@ -180,5 +186,85 @@
     left: 0;
     width: 311rem;
     height: 620rem;
+  }
+}
+
+
+
+
+.net1en {
+  top: 960em;
+}
+.net2en {
+  top: 3044rem;
+}
+.net3en {
+  top: 3765rem;
+}
+.net4en {
+  top: 4970rem;
+}
+
+
+.line1en {
+  top: 1921rem;
+}
+.line2en {
+  top: 2888rem;
+}
+.line3en {
+  top: 3640rem;
+}
+.line4en {
+  top: 4590rem;
+}
+
+
+.blurredBubble2en {
+  top: 1177rem;
+}
+.blurredBubble3en {
+  top: 2572rem;
+}
+.blurredBubble4en {
+  top: 3225rem;
+}
+.blurredBubble5en {
+  top: 4670rem;
+}
+.blurredBubble6en {
+  top: 5020rem;
+}
+
+@media screen and (max-width: 480px) {
+  
+  .line1en {
+    top: 1433rem;
+  }
+  .line2en {
+    top: 2470rem;
+  }
+  .line3en {
+    top: 3005rem;
+  }
+  .line4en {
+    top: 3590rem;
+  }
+  
+
+  .blurredBubble2en {
+    top: 1155rem;
+  }
+  .blurredBubble3en {
+    top: 2200rem;
+  }
+  .blurredBubble4en {
+    top: 2815rem;
+  }
+  .blurredBubble5en {
+    top: 3590rem;
+  }
+  .blurredBubble6en {
+    top: 3910rem;
   }
 }

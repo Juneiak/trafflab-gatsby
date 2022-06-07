@@ -1,6 +1,6 @@
 import * as React from "react"
 import * as styles from './page-form.module.css';
-import { Is480Context } from "../../../utils/contexts";
+import { Is480Context, LangContext } from "../../../utils/contexts";
 
 import MediaImage from "../../ui/media-image/media-image";
 import image from '../../../images/page-form/page-form.png';
@@ -15,6 +15,7 @@ export default function PageForm() {
   const [ tgValue, setTgvalue ] = React.useState('')
   
   const is480 = React.useContext(Is480Context)
+  const data = React.useContext(LangContext).pageForm;
 
   const handleInputChange = ( setStateFunc ) => (evt) => setStateFunc(evt.target.value);
   
@@ -24,12 +25,12 @@ export default function PageForm() {
 
         <div className={styles.formContainer}>
           <div className={styles.textSvg} />
-          <p className={styles.text}>Оставьте заявку и менеджер свяжется с вами в ближайшее время</p>
+          <p className={styles.text}>{data.text}</p>
           <form className={styles.form}>
-            <BasicInput placeholder='Имя' value={nameValue} onChange={handleInputChange(setNamavalue)} />
+            <BasicInput placeholder={data.nameInput} value={nameValue} onChange={handleInputChange(setNamavalue)} />
             <BasicInput placeholder='Telegram' value={tgValue} onChange={handleInputChange(setTgvalue)} />
             {is480
-              ? <BasicButton text='Присоединиться' handler={() => false} />
+              ? <BasicButton text={data.button480} handler={() => false} />
               : <ArrowButton direction='right' handler={() => false}/>
             }
           </form>

@@ -6,10 +6,11 @@ import ContactsList from '../../common/contacts-list/contacts-list';
 import CircledIconWrapper from '../../common/circled-icon-wrapper/circled-icon-wrapper';
 import mailIcon from '../../../images/icons/mail.svg';
 import skypeIcon from '../../../images/icons/skype.svg';
-import { Is480Context } from "../../../utils/contexts";
+import { Is480Context, LangContext } from "../../../utils/contexts";
 
 export default function Footer() {
   const is480 = React.useContext(Is480Context)
+  const data = React.useContext(LangContext).footer;
 
   let year
 
@@ -24,7 +25,7 @@ export default function Footer() {
         <div className={styles.logoContainer}><Logo/></div>
 
         <div className={styles.navContainer}><NavList isFooter={true} /></div>
-        <p className={styles.year}>{year} © TraffLab. Все права защищены.</p>
+        <p className={styles.year}>{year}{data.yearText}</p>
 
         <div className={styles.contactsContainer}>
           <ContactsList intoRow={true} isSmall={is480} />

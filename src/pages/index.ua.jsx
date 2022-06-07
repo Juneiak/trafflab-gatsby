@@ -2,7 +2,7 @@ import * as React from "react";
 import Helmet from "react-helmet";
 
 import { LangContext } from "../utils/contexts";
-import enData from "../misc/en-data";
+import uaData from "../misc/ua-data";
 
 import IndexPageLayout from "../components/index-page-layout/index-page-layout";
 import { FormPopup, ArticlePopup, NavPopup } from "../components/popups";
@@ -35,21 +35,21 @@ export default function IndexPage() {
   const closeArticlePopup = () => setArticlePopupOpen(false);
 
   React.useEffect(() => {
-    if (localStorage.getItem('lang') !== 'en' ) localStorage.setItem('lang', 'en');
+    if (localStorage.getItem('lang') !== 'ua' ) localStorage.setItem('lang', 'ua');
   }, [])
 
   return (
     <>
-      <Helmet htmlAttributes={{lang: 'en'}}>
+      <Helmet htmlAttributes={{lang: 'uk'}}>
         <meta charSet="utf-8" />
         <meta name="description" content="Trafflab" />
         <meta name="keywords" content="Trafflab" />
         <meta name="author" content="Trafflab" />
         <link rel="icon" type="image/x-icon" href={favicon}></link>
-        <title>Trafflab | Eng </title>
+        <title>Trafflab | Ua </title>
       </Helmet>
 
-      <LangContext.Provider value={enData}>
+      <LangContext.Provider value={uaData}>
 
         <IndexPageLayout openNavPopupHandler={openNavPopup}  openFormPopupHandler={openFormPopup}>
           <CountriesMarquee />

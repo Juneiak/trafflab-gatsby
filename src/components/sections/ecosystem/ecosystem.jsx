@@ -3,16 +3,18 @@ import * as styles from './ecosystem.module.css';
 import SectionContentLayout from "../../common/section-content-layout/section-content-layout";
 import EcosystemCard from "./ecosystem-card/ecosystem-card";
 import SliderLayout from "../../common/slider-layout/slider-layout";
-import { ecosystemCardsData } from "../../../misc/data";
+import { ecosystemCardsData } from "../../../misc/common-data";
 import { SplideSlide } from '@splidejs/react-splide';
+import { LangContext } from "../../../utils/contexts";
 
 export default function Ecosystem() {
+  const data = React.useContext(LangContext).ecosystemSection;
 
   return (
     <section id='ecosystem' className={styles.ecosystem}>
       <SectionContentLayout
         titleSecondPart='ecosystem'
-        text='Ad-Tech платформа Trafflab - это готовое решение для специалиста любого уровня. Мы можем научить лить трафик с нуля и пробить потолок твоего дохода. Экосистема подстраивается под новичов и опытных вебов и решает любую задачу вебмастера.'
+        text={data.text}
         textStyle={{width: '950rem'}}
       >
         <ul className={styles.list}>

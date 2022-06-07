@@ -3,8 +3,10 @@ import * as styles from './fixed-contacts.module.css';
 import CircledIconWrapper from "../circled-icon-wrapper/circled-icon-wrapper";
 import upArrowIcon from '../../../images/icons/arrow-up.svg'
 import ContactsList from "../contacts-list/contacts-list";
+import { LangContext } from "../../../utils/contexts";
 
 export default function FixedContacts({scrollHandler}) {
+  const data = React.useContext(LangContext);
 
   return (
     <div className={styles.fixedContacts}>
@@ -13,7 +15,7 @@ export default function FixedContacts({scrollHandler}) {
       </div>
       <div className={styles.upArrow}>
         <button onClick={scrollHandler} className={styles.upButton}><CircledIconWrapper icon={upArrowIcon} /></button>  
-        <span className={styles.upText}>Наверх</span>
+        <span className={styles.upText}>{data.upButton}</span>
       </div>
     </div>
   )

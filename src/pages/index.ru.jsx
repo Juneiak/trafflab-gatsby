@@ -1,7 +1,11 @@
 import * as React from "react";
 import Helmet from "react-helmet";
 
+import { LangContext } from "../utils/contexts";
+import ruData from "../misc/ru-data";
+
 import IndexPageLayout from "../components/index-page-layout/index-page-layout";
+import { FormPopup, ArticlePopup, NavPopup } from "../components/popups";
 import {
   CountriesMarquee,
   TrafficSources,
@@ -13,7 +17,7 @@ import {
   PageForm,
 } from '../components/sections';
 
-import { FormPopup, ArticlePopup, NavPopup } from "../components/popups";
+import favicon from '../images/misc/favicon.ico';
 
 export default function IndexPage() {
 
@@ -30,6 +34,10 @@ export default function IndexPage() {
   const openArticlePopup = () =>  setArticlePopupOpen(true);
   const closeArticlePopup = () => setArticlePopupOpen(false);
 
+  React.useEffect(() => {
+    if (localStorage.getItem('lang') !== 'ru' ) localStorage.setItem('lang', 'ru');
+  }, [])
+
   return (
     <>
       <Helmet htmlAttributes={{lang: 'ru'}}>
@@ -37,24 +45,28 @@ export default function IndexPage() {
         <meta name="description" content="Trafflab" />
         <meta name="keywords" content="Trafflab" />
         <meta name="author" content="Trafflab" />
-        {/* <link rel="icon" type="image/x-icon" href={favicon}></link> */}
-        <title>Trafflab</title>
+        <link rel="icon" type="image/x-icon" href={favicon}></link>
+        <title>Trafflab | Ru </title>
       </Helmet>
 
-      <IndexPageLayout openNavPopupHandler={openNavPopup}  openFormPopupHandler={openFormPopup}>
-        <CountriesMarquee />
-        <TrafficSources />
-        <WhatWeDo openFormPopupHandler={openFormPopup}/>
-        <Ecosystem />
-        <Blog openArticlePopupHandler={openArticlePopup}/>
-        <PartnersMarquee />
-        <Vacancies />
-        <PageForm />
+      <LangContext.Provider value={ruData}>
 
-        <ArticlePopup isOpen={articlePopupOpen} closeHandler={closeArticlePopup} />
-        <FormPopup isOpen={formPopupOpen} closeHandler={closeFormPopup}/>
-        <NavPopup isOpen={navPopupOpen} closeHandler={closeNavPopup}/>
-      </IndexPageLayout>
+        <IndexPageLayout openNavPopupHandler={openNavPopup}  openFormPopupHandler={openFormPopup}>
+          <CountriesMarquee />
+          <TrafficSources />
+          <WhatWeDo openFormPopupHandler={openFormPopup}/>
+          <Ecosystem />
+          <Blog openArticlePopupHandler={openArticlePopup}/>
+          <PartnersMarquee />
+          <Vacancies />
+          <PageForm />
+
+          <ArticlePopup isOpen={articlePopupOpen} closeHandler={closeArticlePopup} />
+          <FormPopup isOpen={formPopupOpen} closeHandler={closeFormPopup}/>
+          <NavPopup isOpen={navPopupOpen} closeHandler={closeNavPopup}/>
+        </IndexPageLayout>
+
+      </LangContext.Provider>
 
     </>
   )
