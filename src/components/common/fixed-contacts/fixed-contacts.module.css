@@ -34,13 +34,12 @@
 }
 
 .upText {
-  top: 65rem;
-  left: -2.5rem;
-  position: absolute;
+  margin-top: 12rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
   color: var(--color-white);
   font-size: var(--font-size-body-small);
   font-family: var(--font-basic);
   font-weight: 300;
-  transform: rotate(-90deg);
-  line-height: 0.8;
+  line-height: 1;
 }

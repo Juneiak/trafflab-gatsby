@@ -15,8 +15,7 @@ export default function PageForm() {
   const [ tgValue, setTgvalue ] = React.useState('')
   
   const is480 = React.useContext(Is480Context)
-  const data = React.useContext(LangContext).pageForm;
-
+  const data = React.useContext(LangContext);
   const handleInputChange = ( setStateFunc ) => (evt) => setStateFunc(evt.target.value);
   
   return (
@@ -24,13 +23,13 @@ export default function PageForm() {
       <div className={styles.content}>
 
         <div className={styles.formContainer}>
-          <div className={styles.textSvg} />
-          <p className={styles.text}>{data.text}</p>
+          <div className={`${styles.textSvg} ${styles['textSvg' + data.lang]}`} />
+          <p className={styles.text}>{data.pageForm.text}</p>
           <form className={styles.form}>
-            <BasicInput placeholder={data.nameInput} value={nameValue} onChange={handleInputChange(setNamavalue)} />
+            <BasicInput placeholder={data.pageForm.nameInput} value={nameValue} onChange={handleInputChange(setNamavalue)} />
             <BasicInput placeholder='Telegram' value={tgValue} onChange={handleInputChange(setTgvalue)} />
             {is480
-              ? <BasicButton text={data.button480} handler={() => false} />
+              ? <BasicButton text={data.pageForm.button480} handler={() => false} />
               : <ArrowButton direction='right' handler={() => false}/>
             }
           </form>

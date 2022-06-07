@@ -58,7 +58,7 @@ const enData = {
     text: 'The Traflab Ad-Tech platform is a ready-made solution for a specialist of any level. We can teach you how to pour traffic from scratch and break through the ceiling of your income. The ecosystem adapts to beginners and experienced web users and solves any task of a webmaster.'
   },
 
-  blogSection: {
+  blog: {
     subtitle: 'blog',
     text: 'Current news, recommendations on the gulf, manuals, insider information from closed sources of affiliate marketing. Read the TraffLab blog and be aware of all market events.',
     articlesList: [
@@ -97,7 +97,7 @@ const enData = {
     title: 'Partners and advertisers',
   },
 
-  vacanciesSection: {
+  vacancies: {
     subtitle: 'Jobs',
     text: 'Trafflab always needs professionals in their field. Do you have coding skills, are you making progress in design, or do you always know where to find profitable bundles? We have a great offer! Trafflab is an international company operating on a single principle: win-win. Work remotely from a convenient point on the planet, develop, and we will give you everything you need for this.',
     vacanciesList: [

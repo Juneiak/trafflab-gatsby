@@ -7,7 +7,7 @@ import SliderLayout from "../../common/slider-layout/slider-layout";
 import {LangContext} from '../../../utils/contexts';
 
 export default function Vacancies() {
-  const data = React.useContext(LangContext).vacanciesSection;
+  const data = React.useContext(LangContext).vacancies;
 
   return (
     <section id='vacancies' className={styles.vacancies}>

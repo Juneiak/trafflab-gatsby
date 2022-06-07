@@ -30,11 +30,10 @@ const IndexPage = () => {
       localStorage.setItem('lang', urlLang);
     }
     
-    
     navigate(`/${urlLang}/`, {replace: true});
   }, []);
 
-  return null;
+  return <div style={{height: '100vh', widows: '100%', backgroundColor: 'var(--color-dark-2)'}}></div>;
 };
 
 export default IndexPage;

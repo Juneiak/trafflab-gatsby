@@ -2,8 +2,9 @@
   width: 100%;
   height: max-content;
   overflow: hidden;
-  padding-bottom: 175rem;
+  padding-bottom: 135rem;
   position: relative;
+  padding-top: 40rem;
 }
 
 .content {
@@ -41,7 +42,8 @@
 
 @media screen and (max-width: 480px) {
   .partenrsMarquee {
-    padding-bottom: 40rem;
+    padding-bottom: 20rem;
+    padding-top: 20rem;
   }
   
   .title {

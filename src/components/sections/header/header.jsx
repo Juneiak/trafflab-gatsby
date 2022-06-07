@@ -4,10 +4,10 @@ import Logo from "../../common/logo/logo";
 import NavList from "../../common/nav-list/nav-list";
 import AskQuestion from "../../common/ask-question/ask-question";
 
-export default function Header({ openFormPopupHandler, headerRef, openNavPopupHandler }) {
+export default function Header({ openFormPopupHandler, openNavPopupHandler }) {
 
   return (
-    <header ref={headerRef} className={styles.header}>
+    <header className={styles.header}>
       <div className={styles.content}>
         <Logo />
         <div className={styles.navContainer}><NavList /></div>

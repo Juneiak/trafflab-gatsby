@@ -16,21 +16,21 @@ import useIs480 from '../../hooks/use-is-480';
 
 export default function IndexPageLayout({ children, openFormPopupHandler, openNavPopupHandler }) {
   
-  const headerRef = React.useRef();
+  const pageRef = React.useRef();
   const is480 = useIs480()
   
-  const smoothScrollToHeader = () => headerRef.current.scrollIntoView({behavior: 'smooth'});
+  const smoothScrollToHeader = () => pageRef.current.scrollIntoView({behavior: 'smooth'});
   
   return (
     <>
       <Is480Context.Provider value={is480}>
-        <div className={styles.page}>
+        <div ref={pageRef} className={styles.page}>
           <BackgroundItems />
           
           <div className={styles.content}>
             
             <div className={styles.openingContainer}>
-              <Header headerRef={headerRef} openNavPopupHandler={openNavPopupHandler} openFormPopupHandler={openFormPopupHandler}/>
+              <Header openNavPopupHandler={openNavPopupHandler} openFormPopupHandler={openFormPopupHandler}/>
               <Opening openFormPopupHandler={openFormPopupHandler} />
               <div className={styles.blurredBubbleContainer}><MediaImage image={bubble1} image480={bubble2_480}/></div>
             </div>

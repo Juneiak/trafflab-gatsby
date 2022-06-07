@@ -27,10 +27,22 @@
   width: 515rem;
   height: 113rem;
   margin-bottom: 16rem;
-  background-image: url(../../../images/misc/form-text.svg);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.textSvgru {
+  background-image: url(../../../images/page-form/text-ru.svg);
+
+}
+
+.textSvgen {
+  background-image: url(../../../images/page-form/text-en.svg);
+}
+
+.textSvgua {
+  background-image: url(../../../images/page-form/text-ru.svg);
 }
 
 .text {

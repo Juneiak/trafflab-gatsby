@@ -8,7 +8,7 @@ import { SplideSlide } from '@splidejs/react-splide';
 import { LangContext } from "../../../utils/contexts";
 
 export default function Blog({openArticlePopupHandler}) {
-  const data = React.useContext(LangContext).blogSection;
+  const data = React.useContext(LangContext).blog;
 
   return (
     <section id="blog" className={styles.blog}>

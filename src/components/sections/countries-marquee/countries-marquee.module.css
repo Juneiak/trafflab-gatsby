@@ -2,7 +2,7 @@
   width: 100%;
   height: max-content;
   overflow: hidden;
-  padding: 22rem 0 157rem;
+  padding: 22rem 0 117rem;
   position: relative;
 }
 
@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 480px) {
   .countriesMarquee {
-    padding: 13rem 0 60rem;
+    padding: 13rem 0 40rem;
   }
 
   .listElement::after {

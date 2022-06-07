@@ -7,7 +7,7 @@ import { LangContext } from "../../../utils/contexts";
 
 export default function FixedContacts({scrollHandler}) {
   const data = React.useContext(LangContext);
-
+  
   return (
     <div className={styles.fixedContacts}>
       <div className={styles.listContainer}>

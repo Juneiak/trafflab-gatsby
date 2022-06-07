@@ -18,6 +18,7 @@
 
 .logoContainer {
   grid-area: logo;
+  margin-top: -7rem;
 }
 
 .navContainer {
@@ -80,6 +81,7 @@
 
   .logoContainer {
     margin-bottom: 16rem;
+    margin-top: 0;
   }
 
   .navContainer {

@@ -1,9 +1,10 @@
 .ecosystem {
-  padding-bottom: 344rem;
+  padding-bottom: 304rem;
   display: flex;
   justify-content: center;
   width: 100%;
   overflow: hidden;
+  padding-top: 40rem;
 }
 
 .list {
@@ -14,6 +15,7 @@
 
 @media screen and (max-width: 480px) {
   .ecosystem {
-    padding-bottom: 110em;
+    padding-bottom: 90em;
+    padding-top: 20rem;
   }
 }

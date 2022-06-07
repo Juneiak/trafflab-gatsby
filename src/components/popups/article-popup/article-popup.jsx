@@ -3,9 +3,13 @@ import * as styles from './article-popup.module.css';
 import PopupLayout from '../popup-layout/popup-layout';
 import MediaImage from "../../ui/media-image/media-image";
 import image from '../../../images/blog-article-popup/image.png';
+import { LangContext } from "../../../utils/contexts";
 
-export default function ArticlePopup({isOpen, closeHandler}) {
-  
+export default function ArticlePopup({isOpen, id, closeHandler}) {
+
+  const data = React.useContext(LangContext).blog.articlesList[id];
+  if (!data) return null
+
   return (
     <PopupLayout isOpen={isOpen} closeHandler={closeHandler}>
 
@@ -13,12 +17,15 @@ export default function ArticlePopup({isOpen, closeHandler}) {
         <button onClick={closeHandler} className={styles.closeButton} />
         <div className={styles.content}>
 
-          <div className={styles.imageContainer}><MediaImage image={image} /></div>
-          <h3 className={styles.title}>Выставка Bauhaus Typography at 100 и лекция Эллен Лаптон</h3>
+          <div className={styles.imageContainer}><MediaImage image={data.image} /></div>
+          <h3 className={styles.title}>{data.title}</h3>
           <div className={styles.textContainer}>
-            <p className={styles.text}>В честь столетия великой Школы дизайна, в Letterform Archive создали выставку типографики Баухауса. Вы можете прямо сейчас посетить виртуальный тур по ней и посмотреть множество интересных работ, опубликованных впервые в отличном качестве: exhibitions.letterformarchive.org (https://exhibitions.letterformarchive.org/)</p>
-            <p className={styles.text}>Следующая тема культового немецкого журнала о типографике и дизайне Slanted посвящена экспериментальным шрифтам, основанным на ошибках, неточностях, генеративной графике и вариативных форматах. Свои работы могут загрузить шрифтовики, типографы, дизайнеры, иллюстраторы, художники. И сразу попасть в галерею на сайте, а возможно, и в печатное издание. </p>
-            <p className={styles.text}>Следующая тема культового немецкого журнала о типографике и дизайне Slanted посвящена экспериментальным шрифтам, основанным на ошибках, неточностях, генеративной графике и вариативных форматах. Свои работы могут загрузить шрифтовики, типографы, дизайнеры, иллюстраторы, художники. И сразу попасть в галерею на сайте, а возможно, и в печатное издание. </p>
+            <p className={styles.text}>{data.text}</p>
+            {/* {
+              data.texts.map((text, index) => (
+                <p key={index} className={styles.text}>{text}</p>
+              ))
+            } */}
           </div>
 
         </div>
