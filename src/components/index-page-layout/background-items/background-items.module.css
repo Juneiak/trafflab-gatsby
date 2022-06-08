@@ -6,7 +6,7 @@
   z-index: 1;
 }
 
-.backgroundItems div {
+.backgroundItems > div {
   position: absolute;
 }
 

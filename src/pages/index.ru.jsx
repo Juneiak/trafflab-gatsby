@@ -27,6 +27,7 @@ export default function IndexPage() {
   const [ formPopupOpen, setFormPopupOpen ] = React.useState(false);
   const [ navPopupOpen, setNavPopupOpen ] = React.useState(false);
 
+
   const openNavPopup = () =>  setNavPopupOpen(true);
   const closeNavPopup = () => setNavPopupOpen(false);
 

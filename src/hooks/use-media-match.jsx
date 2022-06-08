@@ -1,18 +1,11 @@
 import React from "react";
 
-export default function useMediaMatch(media) {
-  const [isMatch, setIsMatch] = React.useState(false);
+export default function useTopOffset(ref) {
+  const [topOffset, setTopOffset] = React.useState(null);
 
   React.useLayoutEffect(() => {
-    const handleMediaChange = (evt) => {
-      if (evt.matches !== isMatch) setIsMatch(evt.matches)
-    }
-    const mediaQuire = window.matchMedia(media);
-    handleMediaChange(mediaQuire)
-    mediaQuire.addEventListener('change', handleMediaChange)
-    
-    return () => mediaQuire.removeEventListener('change', handleMediaChange)
+    setTopOffset(ref.getBoundingClientRect())
   }, []);
 
-  return isMatch;
+  return topOffset;
 }

@@ -4,6 +4,7 @@ import WhatWeDoCard from "./what-we-do-card/what-we-do-card";
 import MediaImage from '../../ui/media-image/media-image'
 import BasicButton from "../../ui/basic-button/basic-button";
 import { Is480Context, LangContext } from "../../../utils/contexts";
+import WhatWeDoImage from "./what-we-do-image/what-we-do-image";
 
 import phoneIcon from '../../../images/icons/phone-1.svg';
 import calendarIcon from '../../../images/icons/calendar-1.svg';
@@ -12,8 +13,8 @@ import bannerIcon from '../../../images/icons/banner.svg';
 import coinIcon from '../../../images/icons/coin.svg';
 import sortIcon from '../../../images/icons/sort.svg';
 import graphIcon from '../../../images/icons/graph-2.svg';
-import image from '../../../images/what-we-do/what-we-do.png';
-import image_480 from '../../../images/what-we-do/what-we-do-480.png';
+
+
 
 export default function WhatWeDo({openFormPopupHandler}) {
   const is480 = React.useContext(Is480Context);
@@ -23,9 +24,7 @@ export default function WhatWeDo({openFormPopupHandler}) {
     <section className={styles.whatWeDo}>
       <div className={styles.content}>
 
-        <div className={styles.imageContainer}>
-          <MediaImage image={image} image480={image_480} />
-        </div>
+        <WhatWeDoImage />
         <div className={styles.textContainer}>
           <h2 className={styles.title}>{is480 ? data.title480 : data.title}<br/><span style={{color: 'var(--color-red-1'}}>{is480 ? data.subtitle480 : data.subtitle}</span></h2>
           <ul className={styles.list}>
