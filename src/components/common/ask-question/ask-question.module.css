@@ -35,6 +35,10 @@
   cursor: pointer;
 }
 
+.langListContainer {
+  
+}
+
 @media screen and (max-width: 480px) {
   .askQuestion {
     gap: 10rem;

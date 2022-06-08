@@ -5,7 +5,7 @@ import upArrowIcon from '../../../images/icons/arrow-up.svg'
 import ContactsList from "../contacts-list/contacts-list";
 import { LangContext } from "../../../utils/contexts";
 
-export default function FixedContacts({scrollHandler}) {
+export default function FixedContacts({scrollHandler, clickHandler}) {
   const data = React.useContext(LangContext);
   
   return (
@@ -15,7 +15,7 @@ export default function FixedContacts({scrollHandler}) {
       </div>
       <div className={styles.upArrow}>
         <button onClick={scrollHandler} className={styles.upButton}><CircledIconWrapper icon={upArrowIcon} /></button>  
-        <span className={styles.upText}>{data.upButton}</span>
+        <span onClick={clickHandler} className={styles.upText}>{data.upButton}</span>
       </div>
     </div>
   )

@@ -100,6 +100,7 @@ const enData = {
   vacancies: {
     subtitle: 'Jobs',
     text: 'Trafflab always needs professionals in their field. Do you have coding skills, are you making progress in design, or do you always know where to find profitable bundles? We have a great offer! Trafflab is an international company operating on a single principle: win-win. Work remotely from a convenient point on the planet, develop, and we will give you everything you need for this.',
+    readMore: 'More',
     vacanciesList: [
       {
         status: 'Telework',
@@ -166,7 +167,8 @@ const enData = {
     button480: 'To send',
     agreement: 'I agree to data processing'
   },
-
+  
+  successMessage: 'your application has been sent'
 
 }
 

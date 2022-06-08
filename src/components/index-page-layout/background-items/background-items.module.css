@@ -193,7 +193,7 @@
 
 
 .net1en {
-  top: 960em;
+  top: 960em!important;
 }
 .net2en {
   top: 3024rem;
@@ -239,32 +239,32 @@
 @media screen and (max-width: 480px) {
   
   .line1en {
-    top: 1433rem;
+    top: 1410rem;
   }
   .line2en {
-    top: 2470rem;
+    top: 2450rem;
   }
   .line3en {
-    top: 3005rem;
+    top: 2960rem;
   }
   .line4en {
-    top: 3590rem;
+    top: 3560rem;
   }
   
 
   .blurredBubble2en {
-    top: 1155rem;
+    top: 1135rem;
   }
   .blurredBubble3en {
-    top: 2200rem;
+    top: 2180rem;
   }
   .blurredBubble4en {
-    top: 2815rem;
+    top: 2810rem;
   }
   .blurredBubble5en {
-    top: 3590rem;
+    top: 3550rem;
   }
   .blurredBubble6en {
-    top: 3910rem;
+    top: 3870rem;
   }
 }

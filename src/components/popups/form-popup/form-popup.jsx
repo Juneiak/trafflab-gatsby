@@ -4,18 +4,25 @@ import PopupLayout from "../popup-layout/popup-layout";
 import MediaImage from "../../ui/media-image/media-image";
 import image from '../../../images/form-popup/image.png';
 import image480 from '../../../images/form-popup/image480.png';
-import { LangContext } from '../../../utils/contexts';
+import { LangContext, MessagesContext } from '../../../utils/contexts';
 
 import BasicButton from "../../ui/basic-button/basic-button";
 import BasicInput from "../../ui/basic-input/basic-input";
 
 export default function FormPopup({ closeHandler, isOpen }) {
+
   const [ nameValue, setNamavalue ] = React.useState('');
   const [ tgValue, setTgvalue ] = React.useState('');
+
   const data = React.useContext(LangContext).formPopup;
+  const successMessageHandler = React.useContext(MessagesContext)
 
   const handleInputChange = ( setStateFunc ) => (evt) => setStateFunc(evt.target.value);
 
+  const handleButtonClick = () => {
+    successMessageHandler();
+    closeHandler()
+  }
   return (
     <PopupLayout isOpen={isOpen} closeHandler={closeHandler}>
       <div className={styles.formPopup}>
@@ -31,7 +38,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
             <BasicInput placeholder='Telegram' value={tgValue} onChange={handleInputChange(setTgvalue)} />
           </div>
           <div className={styles.buttonContainer}>
-            <BasicButton text={data.button480}  handler={() => false}/>
+            <BasicButton text={data.button480}  handler={handleButtonClick}/>
             <p className={styles.agreement}>{data.agreement}</p>
           </div>
         </form>

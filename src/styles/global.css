@@ -55,9 +55,6 @@ h1, h2, h3, h4, h5, p {
   margin: 0;
 }
 
-.avia-safari #full_slider_1 {
-}
-
 @keyframes openAniamtion {
   0% {opacity: 0}
   100% {opacity: 1}

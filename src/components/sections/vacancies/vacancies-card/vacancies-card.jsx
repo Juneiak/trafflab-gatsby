@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as styles from './vacancies-card.module.css';
 
-export default function VacanciesCard({handler, data: {status, speciality, experience, about}}) {
+export default function VacanciesCard({handler, data: {status, speciality, experience, about, readMore}}) {
 
   return (
     <article className={styles.card}>
@@ -11,7 +11,7 @@ export default function VacanciesCard({handler, data: {status, speciality, exper
         <p className={styles.experience}>{experience}</p>
         <p className={styles.about}>{about}</p>
       </div>
-      <button className={styles.button} onClick={handler} type='button'>Подробнее</button>
+      <button className={styles.button} onClick={handler} type='button'>{readMore}</button>
     </article>
   )
 }

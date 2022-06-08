@@ -12,7 +12,7 @@ import linkedinImage from '../../../images/icons/linkedin-2.svg';
 
 export default function ContactsList({ intoRow, isSmall=false }) {
   return (
-    <ul style={intoRow && {flexDirection: 'row', height: 'auto'}} className={`${styles.list} ${isSmall ? styles.isSmall : ''}`}>
+    <ul style={intoRow && {flexDirection: 'row', height: 'auto'}} className={styles.list}>
       <IconLink isSmall={isSmall} icon={tgImage} linkTo='https://t.me/trafflabmedia?utm_source=main+landing'/>
       <IconLink isSmall={isSmall} icon={fbImage} linkTo='https://www.linkedin.com/groups/12674241/?utm_source=main+landing'/>
       <IconLink isSmall={isSmall} icon={linkedinImage} linkTo='https://twitter.com/traff_lab?utm_source=main+landing'/>

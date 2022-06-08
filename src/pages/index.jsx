@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { navigate } from "gatsby";
+import Loader from "../components/common/loader/loader";
 
 const getRedirectLanguage = () => {
 
@@ -20,7 +21,8 @@ const getRedirectLanguage = () => {
   }
 };
 
-const IndexPage = () => {
+export default function IndexPage() {
+
   useEffect(() => {
     let urlLang
     const savedLang = localStorage.getItem('lang')
@@ -30,10 +32,20 @@ const IndexPage = () => {
       localStorage.setItem('lang', urlLang);
     }
     
-    navigate(`/${urlLang}/`, {replace: true});
+    navigate(`/${urlLang}/`, {replace: true})
+
   }, []);
 
-  return <div style={{height: '100vh', widows: '100%', backgroundColor: 'var(--color-dark-2)'}}></div>;
+  return (
+    <div style={{
+      height: '100vh',
+      widows: '100%',
+      backgroundColor: 'var(--color-dark-2)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      }}>
+      <Loader />
+    </div>
+  ) 
 };
-
-export default IndexPage;

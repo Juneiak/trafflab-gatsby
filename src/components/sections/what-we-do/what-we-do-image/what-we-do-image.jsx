@@ -9,6 +9,9 @@ import coin1 from '../../../../images/what-we-do/coin-1.png';
 import coin2 from '../../../../images/what-we-do/coin-2.png';
 import coin3 from '../../../../images/what-we-do/coin-3.png';
 
+import coin1_480 from '../../../../images/what-we-do/coin-1-480.png';
+import coin2_480 from '../../../../images/what-we-do/coin-2-480.png';
+import coin3_480 from '../../../../images/what-we-do/coin-3-480.png';
 
 export default function WhatWeDoImage() {
   const lottieContainer = React.useRef()
@@ -17,7 +20,7 @@ export default function WhatWeDoImage() {
     const anim = lottie.loadAnimation({
       container: lottieContainer.current,
       animationData: animation,
-      rendere: 'svg',
+      rendere: 'canvas',
       loop: true,
       autoplay: true,
 
@@ -29,10 +32,9 @@ export default function WhatWeDoImage() {
     <div className={styles.imageContainer}>
       <div ref={lottieContainer} className={styles.lottieDiv} />
       <MediaImage image={image} image480={image_480}/>
-      <div className={styles.coin1}><MediaImage image={coin1}/></div>
-      <div className={styles.coin2}><MediaImage image={coin2}/></div>
-      <div className={styles.coin3}><MediaImage image={coin3}/></div>
-
+      <div className={styles.coin1}><MediaImage image={coin1} image480={coin1_480}/></div>
+      <div className={styles.coin2}><MediaImage image={coin2} image480={coin2_480}/></div>
+      <div className={styles.coin3}><MediaImage image={coin3} image480={coin3_480}/></div>
     </div>
   )
 }

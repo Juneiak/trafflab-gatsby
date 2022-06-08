@@ -1,7 +1,6 @@
 import * as React from "react"
 import * as styles from './what-we-do.module.css';
 import WhatWeDoCard from "./what-we-do-card/what-we-do-card";
-import MediaImage from '../../ui/media-image/media-image'
 import BasicButton from "../../ui/basic-button/basic-button";
 import { Is480Context, LangContext } from "../../../utils/contexts";
 import WhatWeDoImage from "./what-we-do-image/what-we-do-image";
