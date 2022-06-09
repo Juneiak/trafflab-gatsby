@@ -22,6 +22,8 @@ import favicon from '../images/misc/favicon.ico';
 export default function IndexPage() {
 
   const [ articlePopupOpen, setArticlePopupOpen ] = React.useState(false);
+  const [ articleId, setArticleId ] = React.useState(null);
+  
   const [ formPopupOpen, setFormPopupOpen ] = React.useState(false);
   const [ navPopupOpen, setNavPopupOpen ] = React.useState(false);
 
@@ -31,9 +33,14 @@ export default function IndexPage() {
   const openFormPopup = () =>  setFormPopupOpen(true);
   const closeFormPopup = () => setFormPopupOpen(false);
 
-  const openArticlePopup = () =>  setArticlePopupOpen(true);
-  const closeArticlePopup = () => setArticlePopupOpen(false);
-
+  const openArticlePopup = (id) => {
+    setArticleId(id)
+    setArticlePopupOpen(true);
+  }  
+  const closeArticlePopup = () => {
+    setArticlePopupOpen(false);
+    setArticleId(null)
+  }
   React.useEffect(() => {
     if (localStorage.getItem('lang') !== 'ua' ) localStorage.setItem('lang', 'ua');
   }, [])
@@ -61,7 +68,7 @@ export default function IndexPage() {
           <Vacancies />
           <PageForm />
 
-          <ArticlePopup isOpen={articlePopupOpen} closeHandler={closeArticlePopup} />
+          <ArticlePopup id={articleId} isOpen={articlePopupOpen} closeHandler={closeArticlePopup} />
           <FormPopup isOpen={formPopupOpen} closeHandler={closeFormPopup}/>
           <NavPopup isOpen={navPopupOpen} closeHandler={closeNavPopup}/>
         </IndexPageLayout>

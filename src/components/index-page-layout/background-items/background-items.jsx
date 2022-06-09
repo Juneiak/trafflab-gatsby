@@ -25,15 +25,12 @@ export default function BackgroundItems() {
 
   const lang = React.useContext(LangContext).lang
   const is480 = React.useContext(Is480Context);
-
   const langPrefix =  lang !== 'ru' ? lang : '';
 
   React.useEffect(() => {
     const documentHeight = document.body.scrollHeight
-    console.log(documentHeight);
-    const handleScroll = () => {
-      setOffset((window.pageYOffset / documentHeight) * 80);
-    }
+    const ratioDevide = is480 ? 110 : 100;
+    const handleScroll = () => setOffset((window.pageYOffset / documentHeight) * ratioDevide);
     handleScroll()
 
     window.addEventListener('scroll', handleScroll)

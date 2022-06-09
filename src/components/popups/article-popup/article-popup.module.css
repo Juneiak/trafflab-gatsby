@@ -57,7 +57,7 @@
 }
 
 .textContainer {
-  word-break: break-word;
+  width: 100%;
 }
 
 .text {
@@ -73,7 +73,6 @@
 
 .text:last-child {
   margin-bottom: 0;
-
 }
 
 @media screen and (max-width: 480px) {
@@ -109,18 +108,10 @@
     grid-area: title;
   }
 
-  .text {
-    margin-bottom: 16rem;
-    font-size: var(--font-size-body-middle);
-    line-height: 1.57;
-    grid-area: text;
-  }
-
   .imageContainer {
     width: 100%;
     height: 130rem;
     margin-bottom: 16rem;
     grid-area: image;
-
   }
 }

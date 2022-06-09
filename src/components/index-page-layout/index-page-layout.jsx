@@ -32,28 +32,32 @@ export default function IndexPageLayout({ children, openFormPopupHandler, openNa
   return (
     <>
       <Is480Context.Provider value={is480}>
-        <MessagesContext.Provider value={showSuccessMessage}>
-          <div ref={pageRef} className={styles.page}>
-            <BackgroundItems />
-            
-            <div className={styles.content}>
-              
-              <div className={styles.openingContainer}>
-                <Header openNavPopupHandler={openNavPopupHandler} openFormPopupHandler={openFormPopupHandler}/>
-                <Opening openFormPopupHandler={openFormPopupHandler} />
-                <div className={styles.blurredBubbleContainer}><MediaImage image={bubble1} image480={bubble2_480}/></div>
-              </div>
+        {is480 === 'init'
+          ? <></>
+          : <MessagesContext.Provider value={showSuccessMessage}>
+              <div ref={pageRef} className={styles.page}>
+                <BackgroundItems />
+                
+                <div className={styles.content}>
+                  
+                  <div className={styles.openingContainer}>
+                    <Header openNavPopupHandler={openNavPopupHandler} openFormPopupHandler={openFormPopupHandler}/>
+                    <Opening openFormPopupHandler={openFormPopupHandler} />
+                    <div className={styles.blurredBubbleContainer}><MediaImage image={bubble1} image480={bubble2_480}/></div>
+                  </div>
 
-              <main className={styles.main}>
-                { children }
-              </main>
-              
-              <Footer />
-              {!is480 && <FixedContacts scrollHandler={smoothScrollToHeader} />}
-            </div>
-            <SuccessMessage isShown={isSuccessMessage} />
-          </div>
-        </MessagesContext.Provider>
+                  <main className={styles.main}>
+                    { children }
+                  </main>
+                  
+                  <Footer />
+                  {!is480 && <FixedContacts scrollHandler={smoothScrollToHeader} />}
+                </div>
+                <SuccessMessage isShown={isSuccessMessage} />
+              </div>
+            </MessagesContext.Provider>
+      }
+        
       </Is480Context.Provider>
     </>
   )

@@ -1,12 +1,15 @@
 import blogCardImage_1 from '../images/blog-cards-images/card-1.png'
 import blogCardImage_2 from '../images/blog-cards-images/card-2.png'
 import blogCardImage_3 from '../images/blog-cards-images/card-3.png'
-import blogCardImage_4 from '../images/blog-cards-images/card-4.png'
+
+import blogCardImage480_1 from '../images/blog-cards-images/card480-1.png'
+import blogCardImage480_2 from '../images/blog-cards-images/card480-2.png'
+import blogCardImage480_3 from '../images/blog-cards-images/card480-3.png'
+
 
 import blogArticle_1 from '../images/blog-article-popup/article-1.png'
-import blogArticle_2 from '../images/blog-article-popup/article-1.png'
-import blogArticle_3 from '../images/blog-article-popup/article-1.png'
-import blogArticle_4 from '../images/blog-article-popup/article-1.png'
+import blogArticle_2 from '../images/blog-article-popup/article-2.png'
+import blogArticle_3 from '../images/blog-article-popup/article-3.png'
 
 
 const uaData = {
@@ -62,33 +65,47 @@ const uaData = {
     text: 'Актуальні новини, рекомендації щодо заливу, мануали, інсайдерська інформація із закритих джерел аффілейт-маркетингу. Читай блог TraffLab i будь у курсі всіх подій ринку.',
     articlesList: [
       {
+        notReadyMessage: 'Вибачте, стаття поки що пишеться =(',
         id: 0,
         articleImage: blogArticle_1,
         image: blogCardImage_1,
-        title: 'IT мероприятия в Москве и онлайне IT мероприятия в Москве и онлайне',
-        text: 'Чего вы хотите достичь или избежать? Ответы на эти вопросы — это ваши задачи. Как вы собираетесь добиваться желаемых Чего вы хотите достичь или избежать? Ответы на эти вопросы — это ваши задачи. Как вы собираетесь добиваться желаемых Чего вы хотите достичь или избежать? Ответы на эти вопросы — это ваши задачи. Как вы собираетесь добиваться желаемых Чего вы хотите достичь или избежать? Ответы на эти вопросы — это ваши задачи. Как вы собираетесь добиваться желаемых'
+        image480: blogCardImage480_1,
+        title: 'lorem ipsum',
+        texts: [
+          {
+            subtitle: false,
+            text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, molestiae! Assumenda repellendus quia perferendis deserunt eius quidem debitis velit neque dolorum quis omnis, fugiat nihil ullam officiis. Doloremque, repellendus nesciunt!`
+          },
+        ],
       },
-      {     
+      {
+        notReadyMessage: 'Вибачте, стаття поки що пишеться =(',
         id: 1,
         articleImage: blogArticle_2,
         image: blogCardImage_2,
-        title: 'IT мероприятия в Москве и онлайне',
-        text: 'Чего вы хотите достичь или избежать? Ответы на эти вопросы — это ваши задачи. Как вы собираетесь добиваться желаемых...'
+        image480: blogCardImage480_2,
+        title: 'lorem ipsum',
+        texts: [
+          {
+            subtitle: false,
+            text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, molestiae! Assumenda repellendus quia perferendis deserunt eius quidem debitis velit neque dolorum quis omnis, fugiat nihil ullam officiis. Doloremque, repellendus nesciunt!`
+          },
+        ]
       },
-      {     
+      {
+        notReadyMessage: 'Вибачте, стаття поки що пишеться =(',
         id: 2,
         articleImage: blogArticle_3,
         image: blogCardImage_3,
-        title: 'Создайте свою стратегию победы',
-        text: 'Хотите программировать, но не знаете с чего начать? Начните с бесплатного интенсива, где вы попробуете себя в роли Data Scientist...'
-      },
-      {     
-        id: 3,
-        articleImage: blogArticle_4,
-        image: blogCardImage_4,
-        title: 'IT мероприятия в Москве и онлайне',
-        text: 'Чего вы хотите достичь или избежать? Ответы на эти вопросы — это ваши задачи. Как вы собираетесь добиваться желаемых...'
-      },
+        image480: blogCardImage480_3,
+        title: 'lorem ipsum',
+        texts: [
+          {
+            subtitle: false,
+            text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, molestiae! Assumenda repellendus quia perferendis deserunt eius quidem debitis velit neque dolorum quis omnis, fugiat nihil ullam officiis. Doloremque, repellendus nesciunt!`
+          },
+        ]
+      }
     ],
   },
 

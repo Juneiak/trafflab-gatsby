@@ -1,12 +1,16 @@
 import blogCardImage_1 from '../images/blog-cards-images/card-1.png'
 import blogCardImage_2 from '../images/blog-cards-images/card-2.png'
 import blogCardImage_3 from '../images/blog-cards-images/card-3.png'
-import blogCardImage_4 from '../images/blog-cards-images/card-4.png'
+
+import blogCardImage480_1 from '../images/blog-cards-images/card480-1.png'
+import blogCardImage480_2 from '../images/blog-cards-images/card480-2.png'
+import blogCardImage480_3 from '../images/blog-cards-images/card480-3.png'
+
 
 import blogArticle_1 from '../images/blog-article-popup/article-1.png'
-import blogArticle_2 from '../images/blog-article-popup/article-1.png'
-import blogArticle_3 from '../images/blog-article-popup/article-1.png'
-import blogArticle_4 from '../images/blog-article-popup/article-1.png'
+import blogArticle_2 from '../images/blog-article-popup/article-2.png'
+import blogArticle_3 from '../images/blog-article-popup/article-3.png'
+
 
 
 const enData = {
@@ -33,7 +37,7 @@ const enData = {
   },
 
   trafficSourcesSection: {
-    text: 'Any source. Any geo. Any links. Attract leads - Trafflab will do the rest.',
+    text: 'Any source. Any geo. Any links. Generate leads – Trafflab will do the rest.',
     yourOffer: 'Offer your',
   },
 
@@ -44,52 +48,66 @@ const enData = {
     subtitle480: 'webmasters',
     button: 'Join',
     cards: [
-      'Individual development of converting creatives',
-      'We help to increase the envelope and beat out high rates for your source',
-      'Own application development for free for our partners',
-      'Own payment cards',
-      'Withdrawal of money in any convenient way',
-      'Creating products to improve profit',
-      'Hold for up to 14 days',
+      'Custom development of converting creatives',
+      'We help increase the conversion rate and get high rates for your source',
+      'In-house app development for our partners free of charge',
+      'Our own payments',
+      'Money withdrawal in any convenient way',
+      'We create products to improve profit',
+      'Hold up to 14 days',
     ]
   },
 
   ecosystemSection: {
-    text: 'The Traflab Ad-Tech platform is a ready-made solution for a specialist of any level. We can teach you how to pour traffic from scratch and break through the ceiling of your income. The ecosystem adapts to beginners and experienced web users and solves any task of a webmaster.'
+    text: 'The Ad-Tech platform Trafflab is a turnkey solution for a specialist of any level. We can teach you how to attract traffic from scratch and break through the record of your income. The ecosystem adapts to beginners and experienced webmasters and solves any task of a webmaster'
   },
 
   blog: {
     subtitle: 'blog',
-    text: 'Current news, recommendations on the gulf, manuals, insider information from closed sources of affiliate marketing. Read the TraffLab blog and be aware of all market events.',
+    text: 'Latest news, recommendations for traffic flows, manuals, insider information from private sources of affiliate marketing. Read the TraffLab blog and stay up to date with all market developments.',
     articlesList: [
       {
+        notReadyMessage: 'Sorry, article not reay yet =(',
         id: 0,
         articleImage: blogArticle_1,
         image: blogCardImage_1,
-        title: 'IT мероприятия в Москве и онлайне IT мероприятия в Москве и онлайне',
-        text: 'Чего вы хотите достичь или избежать? Ответы на эти вопросы — это ваши задачи. Как вы собираетесь добиваться желаемых Чего вы хотите достичь или избежать? Ответы на эти вопросы — это ваши задачи. Как вы собираетесь добиваться желаемых Чего вы хотите достичь или избежать? Ответы на эти вопросы — это ваши задачи. Как вы собираетесь добиваться желаемых Чего вы хотите достичь или избежать? Ответы на эти вопросы — это ваши задачи. Как вы собираетесь добиваться желаемых'
+        image480: blogCardImage480_1,
+        title: 'lorem ipsum',
+        texts: [
+          {
+            subtitle: false,
+            text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, molestiae! Assumenda repellendus quia perferendis deserunt eius quidem debitis velit neque dolorum quis omnis, fugiat nihil ullam officiis. Doloremque, repellendus nesciunt!`
+          },
+        ],
       },
-      {     
+      {
+        notReadyMessage: 'Sorry, article not reay yet =(',
         id: 1,
         articleImage: blogArticle_2,
         image: blogCardImage_2,
-        title: 'IT мероприятия в Москве и онлайне',
-        text: 'Чего вы хотите достичь или избежать? Ответы на эти вопросы — это ваши задачи. Как вы собираетесь добиваться желаемых...'
+        image480: blogCardImage480_2,
+        title: 'lorem ipsum',
+        texts: [
+          {
+            subtitle: false,
+            text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, molestiae! Assumenda repellendus quia perferendis deserunt eius quidem debitis velit neque dolorum quis omnis, fugiat nihil ullam officiis. Doloremque, repellendus nesciunt!`
+          },
+        ]
       },
-      {     
+      {
+        notReadyMessage: 'Sorry, article not reay yet =(',
         id: 2,
         articleImage: blogArticle_3,
         image: blogCardImage_3,
-        title: 'Создайте свою стратегию победы',
-        text: 'Хотите программировать, но не знаете с чего начать? Начните с бесплатного интенсива, где вы попробуете себя в роли Data Scientist...'
-      },
-      {     
-        id: 3,
-        articleImage: blogArticle_4,
-        image: blogCardImage_4,
-        title: 'IT мероприятия в Москве и онлайне',
-        text: 'Чего вы хотите достичь или избежать? Ответы на эти вопросы — это ваши задачи. Как вы собираетесь добиваться желаемых...'
-      },
+        image480: blogCardImage480_3,
+        title: 'lorem ipsum',
+        texts: [
+          {
+            subtitle: false,
+            text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, molestiae! Assumenda repellendus quia perferendis deserunt eius quidem debitis velit neque dolorum quis omnis, fugiat nihil ullam officiis. Doloremque, repellendus nesciunt!`
+          },
+        ]
+      }
     ],
   },
 
@@ -99,44 +117,44 @@ const enData = {
 
   vacancies: {
     subtitle: 'Jobs',
-    text: 'Trafflab always needs professionals in their field. Do you have coding skills, are you making progress in design, or do you always know where to find profitable bundles? We have a great offer! Trafflab is an international company operating on a single principle: win-win. Work remotely from a convenient point on the planet, develop, and we will give you everything you need for this.',
-    readMore: 'More',
+    text: 'TTrafflab is always looking for professionals in their field. You have coding skills, making progress in design, or always know where to find profitable links? We have a great offer! Trafflab is an international company operating on a single win-win principle. Work remotely from any place you like on the planet, develop, and we will provide everything you need for this.',
+    readMore: 'Read more',
     vacanciesList: [
       {
-        status: 'Telework',
+        status: 'Remotely',
         speciality: 'Data scientist',
         experience: 'Experience from 1 year',
-        about: 'Collection, analysis, structuring of company data. Preparation of reports and search for optimal solutions for information processing'
+        about: 'Collection, analysis, and structuring of company data. Preparation of reports and search for optimal solutions for information processing'
       },
       {
-        status: 'Telework',
+        status: 'Remotely',
         speciality: 'Swift developer',
         experience: 'Experience from 1 year',
-        about: 'Development of necessary software, IOS-based applications'
+        about: 'Development of necessary software and IOS app'
       },
       {
-        status: 'Telework',
+        status: 'Remotely',
         speciality: 'Media buyer',
         experience: 'Experience from 1 year',
-        about: 'Work with advertising networks (Facebook, Tik Tok, Google), traffic flooding and search for new bundles'
+        about: 'Working with advertising networks (Facebook, TikTok, Google), attracting traffic and searching for new links'
       },
       {
-        status: 'Telework',
+        status: 'Remotely',
         speciality: 'Affiliate manager',
         experience: 'Experience from 1 year',
-        about: 'Поиск новых вебмастеров, коммуникация, помощь, сбор обратной связи'
+        about: 'Search for new webmasters, communication, help, feedback collection'
       },
       {
-        status: 'Telework',
+        status: 'Remotely',
         speciality: 'Systems Analyst',
-        experience: 'Experience from 3 year',
-        about: 'Технический анализ работы отделов компании, поиск недостатков, формулировка задач по разработке необходимых решений и ПО'
+        experience: 'Experience from 3 years',
+        about: 'Technical analysis of the company departments operation, detection of drawbacks, formulation of tasks for the development of necessary solutions and software'
       },
       {
-        status: 'Telework',
+        status: 'Remotely',
         speciality: 'HR Business Partner',
-        experience: 'Experience from 2 year',
-        about: 'Поиск новых сотрудников, тимбилдинг и управление персоналом'
+        experience: 'Experience from 2 years',
+        about: 'Search for new employees, team building and personnel management'
       },
     ]
   },
@@ -148,7 +166,7 @@ const enData = {
   },
 
   footer: {
-    yearText: ' © TraffLab. All rights reserved.'
+    yearText: ' © TraffLab. All rights reserved'
   },
 
   navPopup: {
@@ -161,11 +179,11 @@ const enData = {
   },
 
   formPopup: {
-    title: 'Become the best with the best',
-    subtitle: 'Leave a request and the manager will contact you soon',
+    title: 'Become the best together with the best',
+    subtitle: 'Submit a request and the manager will contact you shortly',
     nameInput: 'Name',
-    button480: 'To send',
-    agreement: 'I agree to data processing'
+    button480: 'Send',
+    agreement: 'I agree to the personal data processing'
   },
   
   successMessage: 'your application has been sent'
