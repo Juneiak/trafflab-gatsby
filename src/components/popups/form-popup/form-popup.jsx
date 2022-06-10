@@ -23,8 +23,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
         if (res.ok) {
           successMessageHandler()
           handleReset()
-          closeHandler()
-
+          handleReset({name: '', tg: ''})
         }
       })
   }

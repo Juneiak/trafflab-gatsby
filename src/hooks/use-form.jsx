@@ -8,7 +8,6 @@ export default function useForm() {
     const target = evt.target
     const name = target.name;
     setValues({...values, [name]: target.value})
-    console.log(target.closest('form').checkValidity());
     setIsValid(target.closest('form').checkValidity());
   }
 

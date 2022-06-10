@@ -24,7 +24,7 @@ export default function PageForm() {
       .then(res => {
         if (res.ok) {
           successMessageHandler()
-          handleReset()
+          handleReset({name: '', tg: ''})
         }
       })
   }
