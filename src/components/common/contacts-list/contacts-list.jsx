@@ -14,8 +14,8 @@ export default function ContactsList({ intoRow, isSmall=false }) {
   return (
     <ul style={intoRow && {flexDirection: 'row', height: 'auto'}} className={styles.list}>
       <IconLink isSmall={isSmall} icon={tgImage} linkTo='https://t.me/trafflabmedia?utm_source=main+landing'/>
-      <IconLink isSmall={isSmall} icon={fbImage} linkTo='https://www.linkedin.com/groups/12674241/?utm_source=main+landing'/>
-      <IconLink isSmall={isSmall} icon={linkedinImage} linkTo='https://twitter.com/traff_lab?utm_source=main+landing'/>
+      <IconLink isSmall={isSmall} icon={fbImage} linkTo='https://www.facebook.com/profile.php?id=100081810532130'/>
+      <IconLink isSmall={isSmall} icon={linkedinImage} linkTo='https://www.linkedin.com/feed/'/>
       <IconLink isSmall={isSmall} icon={ytImage} linkTo='https://www.youtube.com/channel/UC7nmSIXvOeGuFXxT3QsOaxQ'/>
       <IconLink isSmall={isSmall} icon={instImage} linkTo='https://www.instagram.com/traff.lab/?utm_source=main+landing'/>
       <IconLink isSmall={isSmall} icon={twitterImage} linkTo='https://twitter.com/traff_lab?utm_source=main+landing'/>

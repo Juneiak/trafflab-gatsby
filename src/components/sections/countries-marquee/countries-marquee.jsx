@@ -1,7 +1,6 @@
 import * as React from "react"
 import * as styles from './countries-marquee.module.css';
 import Marquee from "react-fast-marquee";
-import { countriesData } from "../../../misc/common-data";
 
 export default function CountriesMarquee() {
 
@@ -10,13 +9,36 @@ export default function CountriesMarquee() {
       <div className={styles.content}>
         <Marquee gradient={false} >
           <ul className={styles.list}>
-            {
-              countriesData.map((countryName, index) => (
-                <li key={index} className={styles.listElement}>
-                  <p className={styles.countryName}>{countryName}</p>
-                </li>
-              ))
-            }
+            <li className={styles.listElement}>
+              <p className={styles.countryName}>Ukraine</p>
+            </li>
+            <li className={styles.listElement}>
+              <div className={styles.dot} />
+            </li>
+            <li className={styles.listElement}>
+              <p className={styles.countryName}>Cyprus</p>
+            </li>
+            <li className={styles.listElement}>
+              <div className={styles.dot} />
+            </li>
+            <li className={styles.listElement}>
+              <p className={styles.countryName}>France</p>
+            </li>
+            <li className={styles.listElement}>
+              <div className={styles.dot} />
+            </li>
+            <li className={styles.listElement}>
+              <p className={styles.countryName}>Russia</p>
+            </li>
+            <li className={styles.listElement}>
+              <div className={styles.dot} />
+            </li>
+            <li className={styles.listElement}>
+              <p className={styles.countryName}>Indonesia</p>
+            </li>
+            <li className={styles.listElement}>
+              <div className={styles.dot} />
+            </li>
           </ul>
         </Marquee>
       </div>

@@ -8,7 +8,7 @@
 
 .content {
   width: 100%;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -17,20 +17,22 @@
 .list {
   display: flex;
   align-items: center;
-  justify-items: center;
-  width: 100%
+  justify-content: space-between;
+  width: 100%;
 }
 
 .listElement {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
-.listElement::after {
+.dot {
   content: '';
   width: 13rem;
   height: 13rem;
-  margin: 0 32rem;
+  /* margin: 0 32rem; */
   border-radius: 50%;
   background: linear-gradient(250.18deg, rgba(255, 255, 255, 0.6) 1.29%, rgba(255, 255, 255, 0) 96.35%);
 }
@@ -50,10 +52,10 @@
     padding: 13rem 0 40rem;
   }
 
-  .listElement::after {
+  .dot {
     width: 5.5rem;
     height: 5.5rem;
-    margin: 0 18rem;
+    /* margin: 0 18rem; */
   }
 
   .countryName {

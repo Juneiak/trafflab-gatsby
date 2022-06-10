@@ -6,6 +6,10 @@ export default function BasicInput({
   value,
   type = 'text',
   onChange,
+  maxLength,
+  minLength,
+  name,
+  isRequired
 }) {
   return (
     <input
@@ -14,6 +18,10 @@ export default function BasicInput({
       value={value}
       onChange={onChange}
       placeholder={placeholder}
+      maxLength={maxLength}
+      minLength={minLength}
+      name={name}
+      required={isRequired}
     />
   )
 }

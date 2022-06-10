@@ -49,12 +49,29 @@
   align-items: center;
 }
 
+.mailto {
+  font-family: var(--font-basic);
+  font-size: var(--font-size-body-big);
+  color: var(--color-white);
+  font-weight: 300;
+  margin-left: 10rem;
+  text-decoration:  none;
+  transition: var(--link-opacity-transition);
+}
+
+
+.mailto:hover {
+  opacity: 0.8;
+}
+
+
 .contact {
   font-family: var(--font-basic);
   font-size: var(--font-size-body-big);
   color: var(--color-white);
   font-weight: 300;
   margin-left: 10rem;
+  text-decoration:  none;
 }
 
 
@@ -104,6 +121,11 @@
   }
 
   .contact {
+    font-size: var(--font-size-body-middle);
+    margin-left: 4rem;
+  }
+
+  .mailto {
     font-size: var(--font-size-body-middle);
     margin-left: 4rem;
   }

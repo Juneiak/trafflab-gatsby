@@ -7,17 +7,6 @@ import partnerLogo6 from '../images/partner-logos/logo-6.png';
 import partnerLogo7 from '../images/partner-logos/logo-7.png';
 import partnerLogo8 from '../images/partner-logos/logo-8.png';
 
-
-const countriesData = [
-  'Cyprus',
-  'Ukraine',
-  'Indonesia',
-  'France',
-  'Russia',
-  'Cyprus',
-  'Ukraine',
-]
-
 const partnersData = [
   {
     logo: partnerLogo1,
@@ -89,7 +78,6 @@ const ecosystemCardsData = [
 ]
 
 export {
-  countriesData,
   partnersData,
   ecosystemCardsData,
 }

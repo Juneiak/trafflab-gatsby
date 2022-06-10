@@ -20,7 +20,7 @@ export default function Vacancies() {
           <SliderLayout>
             {
               data.vacanciesList.map((vacancyData, index) => (
-                <SplideSlide key={index}><VacanciesCard data={vacancyData}/></SplideSlide>
+                <SplideSlide key={index}><VacanciesCard readMore={data.readMore} data={vacancyData}/></SplideSlide>
               ))
             }
           </SliderLayout>

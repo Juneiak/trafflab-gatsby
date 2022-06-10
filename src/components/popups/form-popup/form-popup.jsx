@@ -5,23 +5,28 @@ import MediaImage from "../../ui/media-image/media-image";
 import image from '../../../images/form-popup/image.png';
 import image480 from '../../../images/form-popup/image480.png';
 import { LangContext, MessagesContext } from '../../../utils/contexts';
-
+import useForm from '../../../hooks/use-form';
+import { sendFormToTg } from "../../../utils/api";
 import BasicButton from "../../ui/basic-button/basic-button";
 import BasicInput from "../../ui/basic-input/basic-input";
 
 export default function FormPopup({ closeHandler, isOpen }) {
 
-  const [ nameValue, setNamavalue ] = React.useState('');
-  const [ tgValue, setTgvalue ] = React.useState('');
+  const {values, handleChange, isValid, handleReset} = useForm()
 
   const data = React.useContext(LangContext).formPopup;
   const successMessageHandler = React.useContext(MessagesContext)
 
-  const handleInputChange = ( setStateFunc ) => (evt) => setStateFunc(evt.target.value);
+  const handleSendClick = () => {
+    sendFormToTg(values.name, values.tg)
+      .then(res => {
+        if (res.ok) {
+          successMessageHandler()
+          handleReset()
+          closeHandler()
 
-  const handleButtonClick = () => {
-    successMessageHandler();
-    closeHandler()
+        }
+      })
   }
   return (
     <PopupLayout isOpen={isOpen} closeHandler={closeHandler}>
@@ -34,11 +39,29 @@ export default function FormPopup({ closeHandler, isOpen }) {
 
         <form className={styles.form}>
           <div className={styles.inputsContainer}>
-            <BasicInput placeholder={data.nameInput} value={nameValue} onChange={handleInputChange(setNamavalue)} />
-            <BasicInput placeholder='Telegram' value={tgValue} onChange={handleInputChange(setTgvalue)} />
+              <BasicInput
+                name='name'
+                placeholder={data.nameInput}
+                value={values.name}
+                onChange={handleChange}
+                minLength={1}
+                isRequired={true}
+              />
+              <BasicInput
+                name='tg'
+                placeholder='Telegram'
+                value={values.tg}
+                onChange={handleChange}
+                minLength={1}
+                isRequired={true}
+              />
           </div>
           <div className={styles.buttonContainer}>
-            <BasicButton text={data.button480}  handler={handleButtonClick}/>
+            <BasicButton
+              text={data.button480}
+              isActive={isValid}
+              handler={handleSendClick}
+            />
             <p className={styles.agreement}>{data.agreement}</p>
           </div>
         </form>

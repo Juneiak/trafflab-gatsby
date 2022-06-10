@@ -9,6 +9,7 @@ export default function ArrowButton({ isActive=true, handler, isSecondary, direc
     <button
       className={`${styles.button} ${isSecondary ? styles.secondary : styles.primary}`}
       disabled={!isActive}
+      style={isActive ? {} : {backgroundColor: 'var(--color-gray-2)'}}
       onClick={handler}
       type='button'
     >
