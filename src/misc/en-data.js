@@ -67,44 +67,44 @@ const enData = {
     text: 'Latest news, recommendations for traffic flows, manuals, insider information from private sources of affiliate marketing. Read the TraffLab blog and stay up to date with all market developments.',
     articlesList: [
       {
-        notReadyMessage: 'Sorry, article not reay yet =(',
+        notReadyMessage: 'The article will be available for free very soon. Stay tuned for announcements :)',
         id: 0,
         articleImage: blogArticle_1,
         image: blogCardImage_1,
         image480: blogCardImage480_1,
-        title: 'lorem ipsum',
+        title: 'Affiliate marketing 2022: stagnation or time of opportunity?',
         texts: [
           {
             subtitle: false,
-            text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, molestiae! Assumenda repellendus quia perferendis deserunt eius quidem debitis velit neque dolorum quis omnis, fugiat nihil ullam officiis. Doloremque, repellendus nesciunt!`
+            text: `Global world shocks, of course, touched on traffic arbitrage. The sphere is in a temporary decline, the community has become less cohesive, which has led to a completely new market segmentation.`
           },
         ],
       },
       {
-        notReadyMessage: 'Sorry, article not reay yet =(',
+        notReadyMessage: 'The article will be available for free very soon. Stay tuned for announcements :)',
         id: 1,
         articleImage: blogArticle_2,
         image: blogCardImage_2,
         image480: blogCardImage480_2,
-        title: 'lorem ipsum',
+        title: '$1,000,000,000 on gambling - how does it work?',
         texts: [
           {
             subtitle: false,
-            text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, molestiae! Assumenda repellendus quia perferendis deserunt eius quidem debitis velit neque dolorum quis omnis, fugiat nihil ullam officiis. Doloremque, repellendus nesciunt!`
+            text: `Gambling is without a doubt one of the top 3 most popular affiliate marketing verticals. Three-digit payouts for a lead, simple and understandable approaches to funnels, maximum simplification of work in the form of free applications and ready-made landing pages for webmasters`
           },
         ]
       },
       {
-        notReadyMessage: 'Sorry, article not reay yet =(',
+        notReadyMessage: 'The article will be available for free very soon. Stay tuned for announcements :)',
         id: 2,
         articleImage: blogArticle_3,
         image: blogCardImage_3,
         image480: blogCardImage480_3,
-        title: 'lorem ipsum',
+        title: 'Beware of scammers! Scam, sheif and fraud in Affiliate marketing',
         texts: [
           {
             subtitle: false,
-            text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, molestiae! Assumenda repellendus quia perferendis deserunt eius quidem debitis velit neque dolorum quis omnis, fugiat nihil ullam officiis. Doloremque, repellendus nesciunt!`
+            text: `While some earn by improving the quality and volume of traffic, others prefer to take a share from someone else's pocket and put it in their own.`
           },
         ]
       }

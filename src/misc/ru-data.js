@@ -169,30 +169,33 @@ const ruData = {
         ],
       },
       {
-        notReadyMessage: 'Извините, статья пока пишеться =(',
+        notReadyMessage: 'Статья совсем скоро будет в свободном доступе. Следите за анонсами :)',
         id: 1,
         articleImage: blogArticle_2,
         image: blogCardImage_2,
         image480: blogCardImage480_2,
-        title: 'lorem ipsum',
+        title: '$1 000 000 000 на гемблинге — как это работает?',
         texts: [
           {
-            subtitle: false,
-            text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, molestiae! Assumenda repellendus quia perferendis deserunt eius quidem debitis velit neque dolorum quis omnis, fugiat nihil ullam officiis. Doloremque, repellendus nesciunt!`
+            subtitle: '',
+            text: `Гембла, без сомнений, входит в топ-3 самых популярных вертикалей партнерского маркетинга. Трехзначные выплаты за лид, простые и понятные подходы к воронкам, максимальное упрощение работы в виде бесплатных прилок и готовых лендингов для вебмастеров — все это сделало нишу онлайн-казино максимально выгодной и привлекательной для арбитражников всех уровней. Гемблинг привлекает новичков за счет высоких ставок и простоты настроек, а топов — объемами трафика и новыми офферами. 
+
+            Сегодня гайд о том, что из себя представляет вертикаль гемблинга, кто и как может здесь зарабатывать, как монетизируется трафик и что следует учитывать при работе с нишей. Для тех, кто дочитает до конца: бонус и анонс следующего выпуска (спойлер: расскажем о реальных причинах и механизмах шейва, о которых молчат все партнерки).
+            `
           },
         ]
       },
       {
-        notReadyMessage: 'Извините, статья пока пишеться =(',
+        notReadyMessage: 'Статья совсем скоро будет в свободном доступе. Следите за анонсами :)',
         id: 2,
         articleImage: blogArticle_3,
         image: blogCardImage_3,
         image480: blogCardImage480_3,
-        title: 'lorem ipsum',
+        title: 'Осторожно, мошенники! Скам, шейф и фрод в арбитраже',
         texts: [
           {
-            subtitle: false,
-            text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, molestiae! Assumenda repellendus quia perferendis deserunt eius quidem debitis velit neque dolorum quis omnis, fugiat nihil ullam officiis. Doloremque, repellendus nesciunt!`
+            subtitle: '',
+            text: `Пока одни зарабатывают, повышая качество и объем трафика, другие предпочитают взять долю из чужого кармана и положить в свой. Из-за того, что некоторые участники рынка позволяют себе обманывать коллег, страдает вся индустрия партнерского маркетинга. Какие цели преследуют те, кто занимается фродом и шейвом? К чему могут привести подобные действия? В расследовании Trafflab.`
           },
         ]
       }

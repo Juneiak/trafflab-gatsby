@@ -10,10 +10,11 @@ export default function BlogCard({ openHandler, data: { image, image480, title, 
 
         <div className={styles.imageContainer}><MediaImage image={image} image480={image480}/></div>
         <div className={styles.textContainer}>
-          <h3 className={styles.title}>{title}</h3>
-          <p className={styles.text}>{texts[0].text}</p>
+          <div className={styles.about}>
+            <h3 className={styles.title}>{title}</h3>
+            <p className={styles.text}>{texts[0].text}</p>
+          </div>
         </div>
-
       </button>
     </article>
   )

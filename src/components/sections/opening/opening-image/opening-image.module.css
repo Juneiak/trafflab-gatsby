@@ -70,7 +70,7 @@
   height: 76rem;
   top: 132rem;
   left: 163rem;
-  animation: float3 7s 1s ease-in-out infinite;
+  animation: float3 7s  ease-in-out infinite;
 
 }
 
@@ -99,7 +99,7 @@
   height: 69rem;
   top: 288rem;
   left: 119rem;
-  animation: float3 7s 1s ease-in-out infinite;
+  animation: float1 7s 1s ease-in-out infinite;
 
 }
 
@@ -119,7 +119,7 @@
   height: 95rem;
   top: 70rem;
   left: 809rem;
-  animation: float1 5s 2s ease-in-out infinite;
+  animation: float3 5s 1s ease-in-out infinite;
 }
 
 .coin7 {
@@ -146,7 +146,7 @@
   height: 46rem;
   top: 104rem;
   left: 645rem;
-  animation: float2 6s  ease-in-out infinite;
+  animation: float2 6s 2s ease-in-out infinite;
 }
 
 
