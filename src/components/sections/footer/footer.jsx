@@ -33,11 +33,11 @@ export default function Footer() {
 
             <li className={styles.listEement}>
               <CircledIconWrapper isSmall={is480} icon={mailIcon} />
-              <a href="mailto:admin@trafflab.com" className={styles.mailto}>admin@trafflab.com</a>
+              <a href="mailto:admin@trafflab.com" className={styles.mailto}>support@trafflab.com</a>
             </li>
             <li className={styles.listEement}>
               <CircledIconWrapper isSmall={is480} icon={skypeIcon} />
-              <p className={styles.contact}>dmitry@trafflab.com</p>
+              <p className={styles.contact}>support@trafflab.com</p>
             </li>
 
           </ul>
