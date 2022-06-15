@@ -17,7 +17,7 @@ export default function ContactsList({ intoRow, isSmall=false }) {
       <IconLink isSmall={isSmall} icon={fbImage} linkTo='https://bit.ly/3MzbKow'/>
       <IconLink isSmall={isSmall} icon={linkedinImage} linkTo='https://bit.ly/3mlddUS'/>
       <IconLink isSmall={isSmall} icon={ytImage} linkTo='https://bit.ly/3Mhb3A9'/>
-      <IconLink isSmall={isSmall} icon={instImage} linkTo='https://bit.ly/3auJ5DR'/>
+      <IconLink isSmall={isSmall} icon={instImage} linkTo='https://bit.ly/3xPzgJy'/>
       <IconLink isSmall={isSmall} icon={twitterImage} linkTo='https://bit.ly/3xdtWOC
 '/>
     </ul>

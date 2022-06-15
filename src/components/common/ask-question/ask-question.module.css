@@ -27,7 +27,8 @@
   font-family: var(--font-basic);
   font-size: var(--font-size-body-big);
   color: var(--color-red-1);
-  transition: var(--link-opacity-transition)
+  transition: var(--link-opacity-transition);
+  text-decoration: none;
 }
 
 .askButton:hover {

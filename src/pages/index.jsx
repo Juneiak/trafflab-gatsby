@@ -5,19 +5,21 @@ import Loader from "../components/common/loader/loader";
 const getRedirectLanguage = () => {
 
   if (typeof navigator === `undefined`) {
-    return "ru";
+    return "en";
   }
 
   const lang = navigator && navigator.language && navigator.language.split("-")[0];
-  if (!lang) return "ru";
+  if (!lang) return "en";
 
   switch (lang) {
     case "en":
       return "en";
+    case "ru":
+      return "ru";
     case "uk":
       return "ua";
     default:
-      return "ru";
+      return "en";
   }
 };
 

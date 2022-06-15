@@ -41,7 +41,7 @@ export default function IndexPageLayout({ children, openFormPopupHandler, openNa
                 <div className={styles.content}>
                   
                   <div className={styles.openingContainer}>
-                    <Header openNavPopupHandler={openNavPopupHandler} openFormPopupHandler={openFormPopupHandler}/>
+                    <Header openNavPopupHandler={openNavPopupHandler}/>
                     <Opening openFormPopupHandler={openFormPopupHandler} />
                     <div className={styles.blurredBubbleContainer}><MediaImage image={bubble1} image480={bubble2_480}/></div>
                   </div>
