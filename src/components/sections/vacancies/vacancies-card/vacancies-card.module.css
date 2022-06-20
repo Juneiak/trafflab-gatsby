@@ -52,7 +52,7 @@
   font-size: var(--font-size-body-big);
   font-weight: 300;
   line-height: 1.6;
-  overflow: scroll;
+  overflow: hidden;
   /* max-width: ; */
   word-break: break-word;
   max-height: 130rem;
