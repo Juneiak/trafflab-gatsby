@@ -19,7 +19,7 @@ export default function ArticlePopup({isOpen, id, closeHandler}) {
         {data.notReadyMessage 
           ? <h3 className={styles.title}>{data.notReadyMessage}</h3>
           : <div className={styles.content}>
-              <div className={styles.imageContainer}><MediaImage image={data.articleImage} /></div>
+              <div className={styles.imageContainer}><MediaImage image_webp={data.articleImage_webp} image={data.articleImage} /></div>
               <h3 className={styles.title}>{data.title}</h3>
               <div className={styles.textContainer}>
                 {

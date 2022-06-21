@@ -2,8 +2,12 @@ import * as React from "react"
 import * as styles from './form-popup.module.css';
 import PopupLayout from "../popup-layout/popup-layout";
 import MediaImage from "../../ui/media-image/media-image";
+
 import image from '../../../images/form-popup/image.png';
-import image480 from '../../../images/form-popup/image480.png';
+import image_480 from '../../../images/form-popup/image480.png';
+import image_webp from '../../../images/form-popup/image.webp';
+import image_480_webp from '../../../images/form-popup/image480.webp';
+
 import { LangContext, MessagesContext } from '../../../utils/contexts';
 import useForm from '../../../hooks/use-form';
 import { sendFormToTg } from "../../../utils/api";
@@ -32,7 +36,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
       <div className={styles.formPopup}>
         <button onClick={closeHandler} className={styles.closeButton} />
 
-        <div className={styles.imageContainer}><MediaImage image={image} image480={image480} /></div>
+        <div className={styles.imageContainer}><MediaImage image_webp={image_webp} image_480_webp={image_480_webp} image={image} image_480={image_480} /></div>
         <p className={styles.title}>{data.title}</p>
         <p className={styles.subtitle}>{data.subtitle}</p>
 

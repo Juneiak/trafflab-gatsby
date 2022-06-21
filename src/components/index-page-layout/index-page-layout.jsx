@@ -11,6 +11,8 @@ import SuccessMessage from '../common/success-message/success-message';
 import MediaImage from '../ui/media-image/media-image';
 import bubble1 from '../../images/background-elements/blurred-circle-1.png';
 import bubble2_480 from '../../images/background-elements/blurred-circle-1-480.png';
+import bubble1_webp from '../../images/background-elements/blurred-circle-1.webp';
+import bubble2_480_webp from '../../images/background-elements/blurred-circle-1-480.webp';
 
 import { Is480Context, MessagesContext } from '../../utils/contexts';
 import useIs480 from '../../hooks/use-is-480';
@@ -43,7 +45,7 @@ export default function IndexPageLayout({ children, openFormPopupHandler, openNa
                   <div className={styles.openingContainer}>
                     <Header openNavPopupHandler={openNavPopupHandler}/>
                     <Opening openFormPopupHandler={openFormPopupHandler} />
-                    <div className={styles.blurredBubbleContainer}><MediaImage image={bubble1} image480={bubble2_480}/></div>
+                    <div className={styles.blurredBubbleContainer}><MediaImage image={bubble1} image_480={bubble2_480} image_webp={bubble1_webp} image_480_webp={bubble2_480_webp}/></div>
                   </div>
 
                   <main className={styles.main}>

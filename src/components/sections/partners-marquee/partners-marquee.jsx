@@ -19,7 +19,7 @@ export default function PartnersMarquee() {
               partnersData.map((partnerData, index) => (
                 <li key={index} className={styles.listElement}>
                   <div style={partnerData.dimensionsStyle}>
-                    <MediaImage image={partnerData.logo} />
+                    <MediaImage image_webp={partnerData.logo_webp} image={partnerData.logo} />
                   </div>
                 </li>
               ))

@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 1440rem;
+  width: 100%;
   z-index: 1;
 }
 
@@ -44,7 +44,7 @@
 .line1 {
   top: 1910rem;
   left: 0;
-  width: 1440rem;
+  width: 100%;
   height: 91rem;
   z-index: 5;
 
@@ -52,7 +52,7 @@
 .line2 {
   top: 2852rem;
   left: 0;
-  width: 1440rem;
+  width: 100%;
   height: 91rem;
   z-index: 5;
 
@@ -60,7 +60,7 @@
 .line3 {
   top: 3640rem;
   left: 0rem;
-  width: 1440rem;
+  width: 100%;
   height: 91rem;
   z-index: 5;
 
@@ -68,7 +68,7 @@
 .line4 {
   top: 4650rem;
   left: 0rem;
-  width: 1440rem;
+  width: 100%;
   height: 91rem;
   z-index: 5;
 
@@ -138,19 +138,19 @@
     height: 32rem;
   }
   .line2 {
-    top: 2505rem;
+    top: 2523rem;
     left: 0;
     width: 320rem;
     height: 32rem;
   }
   .line3 {
-    top: 3015rem;
+    top: 3050rem;
     left: 0rem;
     width: 320rem;
     height: 32rem;
   }
   .line4 {
-    top: 3633rem;
+    top: 3666rem;
     left: 0rem;
     width: 320rem;
     height: 32rem;
@@ -170,19 +170,19 @@
     height: 545rem;
   }
   .blurredBubble4 {
-    top: 2845rem;
+    top: 2880rem;
     left: 0rem;
     width: 277rem;
     height: 490rem;
   }
   .blurredBubble5 {
-    top: 3697rem;
+    top: 3666rem;
     right: 0;
     width: 267rem;
     height: 530rem;
   }
   .blurredBubble6 {
-    top: 4007rem;
+    top: 4030rem;
     left: 0;
     width: 311rem;
     height: 620rem;
@@ -239,32 +239,32 @@
 @media screen and (max-width: 480px) {
   
   .line1en {
-    top: 1410rem;
+    top: 1439rem;
   }
   .line2en {
-    top: 2450rem;
+    top: 2508rem;
   }
   .line3en {
-    top: 2960rem;
+    top: 3027rem;
   }
   .line4en {
-    top: 3560rem;
+    top: 3649rem;
   }
   
 
   .blurredBubble2en {
-    top: 1135rem;
+    top: 1147rem;
   }
   .blurredBubble3en {
-    top: 2180rem;
+    top: 2260rem;
   }
   .blurredBubble4en {
-    top: 2810rem;
+    top: 2875rem;
   }
   .blurredBubble5en {
-    top: 3550rem;
+    top: 3643rem;
   }
   .blurredBubble6en {
-    top: 3870rem;
+    top: 3920rem;
   }
 }

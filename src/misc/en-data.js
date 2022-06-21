@@ -1,16 +1,24 @@
-import blogCardImage_1 from "../images/blog-cards-images/card-1.png"
-import blogCardImage_2 from "../images/blog-cards-images/card-2.png"
-import blogCardImage_3 from "../images/blog-cards-images/card-3.png"
+import blogCardImage1 from '../images/blog-cards-images/card-1.png'
+import blogCardImage2 from '../images/blog-cards-images/card-2.png'
+import blogCardImage3 from '../images/blog-cards-images/card-3.png'
+import blogCardImage1_webp from '../images/blog-cards-images/card-1.webp'
+import blogCardImage2_webp from '../images/blog-cards-images/card-2.webp'
+import blogCardImage3_webp from '../images/blog-cards-images/card-3.webp'
 
-import blogCardImage480_1 from "../images/blog-cards-images/card480-1.png"
-import blogCardImage480_2 from "../images/blog-cards-images/card480-2.png"
-import blogCardImage480_3 from "../images/blog-cards-images/card480-3.png"
+import blogCardImage1_480 from '../images/blog-cards-images/card480-1.png'
+import blogCardImage2_480 from '../images/blog-cards-images/card480-2.png'
+import blogCardImage3_480 from '../images/blog-cards-images/card480-3.png'
+import blogCardImage1_480_webp from '../images/blog-cards-images/card480-1.webp'
+import blogCardImage2_480_webp from '../images/blog-cards-images/card480-2.webp'
+import blogCardImage3_480_webp from '../images/blog-cards-images/card480-3.webp'
 
 
-import blogArticle_1 from "../images/blog-article-popup/article-1.png"
-import blogArticle_2 from "../images/blog-article-popup/article-2.png"
-import blogArticle_3 from "../images/blog-article-popup/article-3.png"
-
+import blogArticle1 from '../images/blog-article-popup/article-1.png'
+import blogArticle2 from '../images/blog-article-popup/article-2.png'
+import blogArticle3 from '../images/blog-article-popup/article-3.png'
+import blogArticle1_webp from '../images/blog-article-popup/article-1.webp'
+import blogArticle2_webp from '../images/blog-article-popup/article-2.webp'
+import blogArticle3_webp from '../images/blog-article-popup/article-3.webp'
 
 
 const enData = {
@@ -69,9 +77,12 @@ const enData = {
       {
         notReadyMessage: "The article will be available for free very soon. Stay tuned for announcements :)",
         id: 0,
-        articleImage: blogArticle_1,
-        image: blogCardImage_1,
-        image480: blogCardImage480_1,
+        articleImage: blogArticle1,
+        image: blogCardImage1,
+        image_480: blogCardImage1_480, 
+        articleImage_webp: blogArticle1_webp,
+        image_webp: blogCardImage1_webp,
+        image_480_webp: blogCardImage1_480_webp,
         title: "Affiliate marketing 2022: stagnation or time of opportunity?",
         texts: [
           {
@@ -83,9 +94,12 @@ const enData = {
       {
         notReadyMessage: "The article will be available for free very soon. Stay tuned for announcements :)",
         id: 1,
-        articleImage: blogArticle_2,
-        image: blogCardImage_2,
-        image480: blogCardImage480_2,
+        articleImage: blogArticle2,
+        image: blogCardImage2,
+        image_480: blogCardImage2_480, 
+        articleImage_webp: blogArticle2_webp,
+        image_webp: blogCardImage2_webp,
+        image_480_webp: blogCardImage2_480_webp,
         title: "$1,000,000,000 on gambling - how does it work?",
         texts: [
           {
@@ -97,9 +111,12 @@ const enData = {
       {
         notReadyMessage: "The article will be available for free very soon. Stay tuned for announcements :)",
         id: 2,
-        articleImage: blogArticle_3,
-        image: blogCardImage_3,
-        image480: blogCardImage480_3,
+        articleImage: blogArticle3,
+        image: blogCardImage3,
+        image_480: blogCardImage3_480, 
+        articleImage_webp: blogArticle3_webp,
+        image_webp: blogCardImage3_webp,
+        image_480_webp: blogCardImage3_480_webp,
         title: "Beware of scammers! Scam, sheif and fraud in Affiliate marketing",
         texts: [
           {

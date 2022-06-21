@@ -11,6 +11,16 @@ import seoImage from '../../../images/traffic-sources-images/seo.png';
 import ttImage from '../../../images/traffic-sources-images/tiktok.png';
 import uacImage from '../../../images/traffic-sources-images/uac.png';
 import unityImage from '../../../images/traffic-sources-images/unity.png';
+
+import asoImage_webp from '../../../images/traffic-sources-images/aso.webp';
+import fbImage_webp from '../../../images/traffic-sources-images/facebook.webp';
+import otherImage_webp from '../../../images/traffic-sources-images/other.webp';
+import pcImage_webp from '../../../images/traffic-sources-images/pc.webp';
+import seoImage_webp from '../../../images/traffic-sources-images/seo.webp';
+import ttImage_webp from '../../../images/traffic-sources-images/tiktok.webp';
+import uacImage_webp from '../../../images/traffic-sources-images/uac.webp';
+import unityImage_webp from '../../../images/traffic-sources-images/unity.webp';
+
 import { LangContext } from "../../../utils/contexts";
 
 export default function TrafficSources() {
@@ -25,14 +35,14 @@ export default function TrafficSources() {
         textStyle={{width: '550rem'}}
       >
         <ul className={styles.list}>
-          <TrafficSourcesCard image={fbImage} title='Facebook' />
-          <TrafficSourcesCard isDownPosition={true} image={ttImage} title='Tiktok' />
-          <TrafficSourcesCard image={uacImage} title='Google Ads UAC' />
-          <TrafficSourcesCard isDownPosition={true} image={unityImage} title='In-app' />
-          <TrafficSourcesCard image={seoImage} title='SEO' />
-          <TrafficSourcesCard isDownPosition={true} image={pcImage} title='PPC' />
-          <TrafficSourcesCard image={asoImage} title='ASO' />
-          <TrafficSourcesCard isDownPosition={true} image={otherImage} title={data.yourOffer} />
+          <TrafficSourcesCard image_webp={fbImage_webp} image={fbImage} title='Facebook' />
+          <TrafficSourcesCard image_webp={ttImage_webp} image={ttImage} isDownPosition={true}  title='Tiktok' />
+          <TrafficSourcesCard image_webp={uacImage_webp} image={uacImage} title='Google Ads UAC' />
+          <TrafficSourcesCard image_webp={unityImage_webp} image={unityImage} isDownPosition={true}  title='In-app' />
+          <TrafficSourcesCard image_webp={seoImage_webp} image={seoImage} title='SEO' />
+          <TrafficSourcesCard image_webp={pcImage_webp} image={pcImage} isDownPosition={true}  title='PPC' />
+          <TrafficSourcesCard image_webp={asoImage_webp} image={asoImage} title='ASO' />
+          <TrafficSourcesCard image_webp={otherImage_webp} image={otherImage} isDownPosition={true} title={data.yourOffer} />
         </ul>
       </SectionContentLayout>
     </section>

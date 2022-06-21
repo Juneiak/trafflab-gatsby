@@ -22,7 +22,7 @@
   position: relative;
 }
 
-.image {
+.imageContainer {
   position: absolute;
   bottom: 76rem;
   width: 180rem;
@@ -48,7 +48,7 @@
     padding-bottom: 20rem;
   }
 
-  .image {
+  .imageContainer {
     bottom: 44rem;
     width: 98rem;
     height: 98rem;
