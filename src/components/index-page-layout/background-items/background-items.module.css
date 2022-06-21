@@ -150,7 +150,7 @@
     height: 32rem;
   }
   .line4 {
-    top: 3666rem;
+    top: 3645rem;
     left: 0rem;
     width: 320rem;
     height: 32rem;
@@ -242,13 +242,13 @@
     top: 1439rem;
   }
   .line2en {
-    top: 2508rem;
+    top: 2490rem;
   }
   .line3en {
-    top: 3027rem;
+    top: 3010rem;
   }
   .line4en {
-    top: 3649rem;
+    top: 3622rem;
   }
   
 
@@ -259,12 +259,45 @@
     top: 2260rem;
   }
   .blurredBubble4en {
-    top: 2875rem;
+    top: 2850rem;
   }
   .blurredBubble5en {
     top: 3643rem;
   }
   .blurredBubble6en {
+    top: 3920rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+  .line1ua {
+    top: 1439rem;
+  }
+  .line2ua {
+    top: 2490rem;
+  }
+  .line3ua {
+    top: 3010rem;
+  }
+  .line4ua {
+    top: 3622rem;
+  }
+  
+
+  .blurredBubble2ua {
+    top: 1147rem;
+  }
+  .blurredBubble3ua {
+    top: 2260rem;
+  }
+  .blurredBubble4ua {
+    top: 2850rem;
+  }
+  .blurredBubble5ua {
+    top: 3643rem;
+  }
+  .blurredBubble6ua {
     top: 3920rem;
   }
 }
