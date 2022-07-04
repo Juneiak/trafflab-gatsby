@@ -22,13 +22,16 @@ module.exports = {
     },
   },
   {
-    resolve: `gatsby-plugin-google-analytics`,
+    resolve: `gatsby-plugin-google-gtag`,
     options: {
-      trackingId: "G-6TR3D406KP",
-      head: false,
-      anonymize: false,
-      respectDNT: true,
-
+      trackingIds: [
+        "G-Z0VC3LL0NR",
+      ],
+      pluginConfig: {
+        head: false,
+        respectDNT: false,
+        origin: "https://trafflabgatsbymain.gtsb.io",
+      },
     },
   },
 ]
