@@ -17,6 +17,7 @@ import BasicButton from "../../ui/basic-button/basic-button";
 export default function PageForm() {
 
   const { values, handleChange, isValid, handleReset} = useForm()
+  const [momentWindow, setMomentWindow] = React.useState({});
 
   const is480 = React.useContext(Is480Context)
 
@@ -24,14 +25,22 @@ export default function PageForm() {
   const successMessageHandler = React.useContext(MessagesContext);
 
   const handleSendClick = () => {
-    sendFormToTg(values.name, values.tg)
-      .then(res => {
-        if (res.ok) {
-          successMessageHandler()
-          handleReset({name: '', tg: ''})
-        }
-      })
+    // sendFormToTg(values.name, values.tg)
+    //   .then(res => {
+    //     if (res.ok) {
+    //       successMessageHandler()
+    //       handleReset({name: '', tg: ''})
+    //       momentWindow.yaCounter89406166.reachGoal('tg_form_click');
+    //     }
+    //   })
+    momentWindow.yaCounter89406166.reachGoal('tg_form_click');
   }
+
+  React.useEffect(() => {
+    setMomentWindow(window)
+    values.phone = ''
+  }, [])
+
 
   return (
     <section className={styles.pageForm}>

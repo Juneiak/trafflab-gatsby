@@ -17,6 +17,8 @@ import bubble2_480_webp from '../../images/background-elements/blurred-circle-1-
 import { Is480Context, MessagesContext } from '../../utils/contexts';
 import useIs480 from '../../hooks/use-is-480';
 
+import { YMInitializer } from 'react-yandex-metrika';
+
 export default function IndexPageLayout({ children, openFormPopupHandler, openNavPopupHandler }) {
   
   const [isSuccessMessage, setIsSuccessMessage] = React.useState(false);
@@ -58,8 +60,8 @@ export default function IndexPageLayout({ children, openFormPopupHandler, openNa
                 <SuccessMessage isShown={isSuccessMessage} />
               </div>
             </MessagesContext.Provider>
-      }
-        
+        }
+        <YMInitializer accounts={[89406166]} options={{webvisor: true}} version="2" />
       </Is480Context.Provider>
     </>
   )

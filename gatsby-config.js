@@ -21,5 +21,15 @@ module.exports = {
       prefixDefault: true,
     },
   },
+  {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: "G-6TR3D406KP",
+      head: false,
+      anonymize: false,
+      respectDNT: true,
+
+    },
+  },
 ]
 };
