@@ -34,6 +34,7 @@ export default function PageForm() {
     //     }
     //   })
     momentWindow.yaCounter89406166.reachGoal('tg_form_click');
+    // typeof window !== "undefined" && window.gtag("event", "click", { ...data })
   }
 
   React.useEffect(() => {

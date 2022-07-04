@@ -28,9 +28,8 @@ module.exports = {
         "G-Z0VC3LL0NR",
       ],
       pluginConfig: {
-        head: false,
+        head: true,
         respectDNT: false,
-        origin: "https://trafflabgatsbymain.gtsb.io",
       },
     },
   },

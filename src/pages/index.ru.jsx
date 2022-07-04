@@ -56,6 +56,8 @@ export default function IndexPage() {
         <meta name="author" content="Trafflab" />
         <link rel="icon" type="image/x-icon" href={favicon}></link>
         <title>Trafflab | Ru </title>
+        <meta name="yandex-verification" content="627efef0ddde2878" />
+        <meta name="google-site-verification" content="sitqCiT_sBfNtwKP81rRGUpgGUIptgDzy1b6I46xV6E" />
       </Helmet>
 
       <LangContext.Provider value={ruData}>
