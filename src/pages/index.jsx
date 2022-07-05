@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { navigate } from "gatsby";
 import Loader from "../components/common/loader/loader";
+import Helmet from "react-helmet";
 
 const getRedirectLanguage = () => {
 
@@ -39,15 +40,21 @@ export default function IndexPage() {
   }, []);
 
   return (
-    <div style={{
-      height: '100vh',
-      widows: '100%',
-      backgroundColor: 'var(--color-dark-2)',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      }}>
-      <Loader />
-    </div>
+    <>
+      <Helmet>
+        <meta name="yandex-verification" content="627efef0ddde2878" />
+        <meta name="google-site-verification" content="sitqCiT_sBfNtwKP81rRGUpgGUIptgDzy1b6I46xV6E" />
+      </Helmet>
+      <div style={{
+        height: '100vh',
+        widows: '100%',
+        backgroundColor: 'var(--color-dark-2)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        }}>
+        <Loader />
+      </div>
+    </>
   ) 
 };
