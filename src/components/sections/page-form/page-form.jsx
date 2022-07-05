@@ -25,15 +25,14 @@ export default function PageForm() {
   const successMessageHandler = React.useContext(MessagesContext);
 
   const handleSendClick = () => {
-    // sendFormToTg(values.name, values.tg)
-    //   .then(res => {
-    //     if (res.ok) {
-    //       successMessageHandler()
-    //       handleReset({name: '', tg: ''})
-    //       momentWindow.yaCounter89406166.reachGoal('tg_form_click');
-    //     }
-    //   })
-    momentWindow.yaCounter89406166.reachGoal('tg_form_click');
+    sendFormToTg(values.name, values.tg)
+      .then(res => {
+        if (res.ok) {
+          successMessageHandler()
+          handleReset({name: '', tg: ''})
+          momentWindow.yaCounter89406166.reachGoal('tg_form_click');
+        }
+      })
     // typeof window !== "undefined" && window.gtag("event", "click", { ...data })
   }
 

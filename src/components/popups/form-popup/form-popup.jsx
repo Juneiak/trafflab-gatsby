@@ -23,18 +23,16 @@ export default function FormPopup({ closeHandler, isOpen }) {
   const successMessageHandler = React.useContext(MessagesContext)
 
   const handleSendClick = () => {
-    momentWindow.yaCounter89406166.reachGoal('tg_form_click');
+    sendFormToTg(values.name, values.tg)
+      .then(res => {
+        if (res.ok) {
+          successMessageHandler()
+          handleReset()
+          handleReset({name: '', tg: ''})
+          momentWindow.yaCounter89406166.reachGoal('tg_form_click');
 
-    // sendFormToTg(values.name, values.tg)
-    //   .then(res => {
-    //     if (res.ok) {
-    //       successMessageHandler()
-    //       handleReset()
-    //       handleReset({name: '', tg: ''})
-    //       momentWindow.yaCounter89406166.reachGoal('tg_form_click');
-
-    //     }
-    //   })
+        }
+      })
   }
 
   React.useEffect(() => {
