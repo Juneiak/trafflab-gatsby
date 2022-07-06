@@ -1,13 +1,15 @@
 import * as React from "react"
 import * as styles from './lang-list.module.css';
 import { navigate } from "gatsby";
+import { changeRelativeUrlLang } from "../../../utils/utils";
 
 export default function LangList() {
   const [lang, setLang] = React.useState('');
 
   const handleChange = (evt) => {
     localStorage.setItem('lang', evt.target.value);
-    navigate('/')
+    setLang(evt.target.value)
+    navigate(changeRelativeUrlLang(evt.target.value))
   }
 
   React.useEffect(() => {

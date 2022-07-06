@@ -3,13 +3,15 @@ import * as styles from './header.module.css';
 import Logo from "../../common/logo/logo";
 import NavList from "../../common/nav-list/nav-list";
 import AskQuestion from "../../common/ask-question/ask-question";
+import { Link } from "gatsby";
+import { getUrlLang } from "../../../utils/utils";
 
 export default function Header({ openNavPopupHandler }) {
 
   return (
     <header className={styles.header}>
       <div className={styles.content}>
-        <Logo />
+        <Link to={`/${getUrlLang()}/`}><Logo /></Link>
         <div className={styles.navContainer}><NavList /></div>
         <div className={styles.burgerContainer}>
           <AskQuestion />

@@ -3,7 +3,11 @@ module.exports = {
     title: `trafflab-gatsby`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sharp", "gatsby-transformer-sharp", 
+  plugins: ["gatsby-plugin-image",
+  "gatsby-plugin-react-helmet",
+  "gatsby-plugin-sharp",
+  "gatsby-transformer-sharp",
+  "gatsby-plugin-anchor-links",
   {
     resolve: 'gatsby-source-filesystem',
     options: {
@@ -12,6 +16,14 @@ module.exports = {
     },
     __key: "images"
   },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      name: 'markdown-pages',
+      path: `${__dirname}/src/pages/blog`
+    },
+  },
+  'gatsby-transformer-remark',
   {
     resolve: `gatsby-plugin-i18n`,
     options: {
@@ -35,3 +47,5 @@ module.exports = {
   },
 ]
 };
+
+console.log(`${__dirname}/src/markdown-pages`);

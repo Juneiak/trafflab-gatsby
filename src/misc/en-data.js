@@ -23,7 +23,7 @@ import blogArticle3_webp from '../images/blog-article-popup/article-3.webp'
 
 const enData = {
   lang: "en",
-  
+  articlePageBackButton: 'To blog',
   navList: {
     sources: "Sources",
     ecosystem: "Ecosystem",
@@ -77,6 +77,7 @@ const enData = {
       {
         notReadyMessage: "The article will be available for free very soon. Stay tuned for announcements :)",
         id: 0,
+        slug: 'article-1',
         articleImage: blogArticle1,
         image: blogCardImage1,
         image_480: blogCardImage1_480, 
@@ -94,6 +95,7 @@ const enData = {
       {
         notReadyMessage: "The article will be available for free very soon. Stay tuned for announcements :)",
         id: 1,
+        slug: 'article-2',
         articleImage: blogArticle2,
         image: blogCardImage2,
         image_480: blogCardImage2_480, 
@@ -111,6 +113,7 @@ const enData = {
       {
         notReadyMessage: "The article will be available for free very soon. Stay tuned for announcements :)",
         id: 2,
+        slug: 'article-3',
         articleImage: blogArticle3,
         image: blogCardImage3,
         image_480: blogCardImage3_480, 

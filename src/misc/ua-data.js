@@ -24,7 +24,7 @@ import blogArticle3_webp from '../images/blog-article-popup/article-3.webp'
 
 const uaData = {
   lang: 'ua',
-  
+  articlePageBackButton: 'До блогу',
   navList: {
     sources: 'Джерела',
     ecosystem: 'Екосистема',
@@ -76,6 +76,7 @@ const uaData = {
     articlesList: [
       {
         id: 0,
+        slug: 'article-1',
         articleImage: blogArticle1,
         image: blogCardImage1,
         image_480: blogCardImage1_480, 
@@ -183,6 +184,7 @@ const uaData = {
       {
         notReadyMessage: 'Стаття дуже скоро буде у вільному доступі. Слідкуйте за анонсами :)',
         id: 1,
+        slug: 'article-2',
         articleImage: blogArticle2,
         image: blogCardImage2,
         image_480: blogCardImage2_480, 
@@ -203,6 +205,7 @@ const uaData = {
       {
         notReadyMessage: 'Стаття дуже скоро буде у вільному доступі. Слідкуйте за анонсами :)',
         id: 2,
+        slug: 'article-3',
         articleImage: blogArticle3,
         image: blogCardImage3,
         image_480: blogCardImage3_480, 

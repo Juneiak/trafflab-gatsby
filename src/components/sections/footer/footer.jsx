@@ -7,6 +7,8 @@ import CircledIconWrapper from '../../common/circled-icon-wrapper/circled-icon-w
 import mailIcon from '../../../images/icons/mail.svg';
 import skypeIcon from '../../../images/icons/skype.svg';
 import { Is480Context, LangContext } from "../../../utils/contexts";
+import { getUrlLang } from "../../../utils/utils";
+import { Link } from "gatsby";
 
 export default function Footer() {
   const is480 = React.useContext(Is480Context)
@@ -22,7 +24,7 @@ export default function Footer() {
   return (
     <footer id='contacts' className={styles.footer}>
       <div className={styles.content}>
-        <div className={styles.logoContainer}><Logo/></div>
+        <div className={styles.logoContainer}><Link to={`/${getUrlLang()}/`}><Logo /></Link></div>
 
         <div className={styles.navContainer}><NavList isFooter={true} /></div>
         <p className={styles.year}>{year}{data.yearText}</p>

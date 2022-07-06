@@ -2,11 +2,11 @@ import * as React from "react"
 import * as styles from './blog-card.module.css';
 import MediaImage from '../../../ui/media-image/media-image';
 
-export default function BlogCard({ openHandler, data: { image, image_480, image_webp, image_480_webp, title, texts, id }} ) {
+export default function BlogCard({ openHandler, data: { image, image_480, image_webp, image_480_webp, title, texts, id, slug }} ) {
 
   return (
     <article className={styles.card}>
-      <button onClick={() => openHandler(String(id))} className={styles.button} type='button' >
+      <button onClick={() => openHandler(String(id), slug)} className={styles.button} type='button' >
 
         <div className={styles.imageContainer}>
           <MediaImage

@@ -1,34 +1,34 @@
 import * as React from "react";
 import * as styles from './background-items.module.css';
 
-import netSvg from '../../../images/background-elements/net.svg';
+import netSvg from '../../../../images/background-elements/net.svg';
 
 import AnimatedLine from "./animated-line/animated-line";
 
-import bubble2 from '../../../images/background-elements/blurred-circle-2.png'
-import bubble3 from '../../../images/background-elements/blurred-circle-3.png'
-import bubble4 from '../../../images/background-elements/blurred-circle-4.png'
-import bubble5 from '../../../images/background-elements/blurred-circle-5.png'
-import bubble6 from '../../../images/background-elements/blurred-circle-6.png'
-import bubble2_480 from '../../../images/background-elements/blurred-circle-2-480.png'
-import bubble3_480 from '../../../images/background-elements/blurred-circle-3-480.png'
-import bubble4_480 from '../../../images/background-elements/blurred-circle-4-480.png'
-import bubble5_480 from '../../../images/background-elements/blurred-circle-5-480.png'
-import bubble6_480 from '../../../images/background-elements/blurred-circle-6-480.png'
+import bubble2 from '../../../../images/background-elements/blurred-circle-2.png'
+import bubble3 from '../../../../images/background-elements/blurred-circle-3.png'
+import bubble4 from '../../../../images/background-elements/blurred-circle-4.png'
+import bubble5 from '../../../../images/background-elements/blurred-circle-5.png'
+import bubble6 from '../../../../images/background-elements/blurred-circle-6.png'
+import bubble2_480 from '../../../../images/background-elements/blurred-circle-2-480.png'
+import bubble3_480 from '../../../../images/background-elements/blurred-circle-3-480.png'
+import bubble4_480 from '../../../../images/background-elements/blurred-circle-4-480.png'
+import bubble5_480 from '../../../../images/background-elements/blurred-circle-5-480.png'
+import bubble6_480 from '../../../../images/background-elements/blurred-circle-6-480.png'
 
-import bubble2_webp from '../../../images/background-elements/blurred-circle-2.webp'
-import bubble3_webp from '../../../images/background-elements/blurred-circle-3.webp'
-import bubble4_webp from '../../../images/background-elements/blurred-circle-4.webp'
-import bubble5_webp from '../../../images/background-elements/blurred-circle-5.webp'
-import bubble6_webp from '../../../images/background-elements/blurred-circle-6.webp'
-import bubble2_480_webp from '../../../images/background-elements/blurred-circle-2-480.webp'
-import bubble3_480_webp from '../../../images/background-elements/blurred-circle-3-480.webp'
-import bubble4_480_webp from '../../../images/background-elements/blurred-circle-4-480.webp'
-import bubble6_480_webp from '../../../images/background-elements/blurred-circle-6-480.webp'
-import bubble5_480_webp from '../../../images/background-elements/blurred-circle-5-480.webp'
+import bubble2_webp from '../../../../images/background-elements/blurred-circle-2.webp'
+import bubble3_webp from '../../../../images/background-elements/blurred-circle-3.webp'
+import bubble4_webp from '../../../../images/background-elements/blurred-circle-4.webp'
+import bubble5_webp from '../../../../images/background-elements/blurred-circle-5.webp'
+import bubble6_webp from '../../../../images/background-elements/blurred-circle-6.webp'
+import bubble2_480_webp from '../../../../images/background-elements/blurred-circle-2-480.webp'
+import bubble3_480_webp from '../../../../images/background-elements/blurred-circle-3-480.webp'
+import bubble4_480_webp from '../../../../images/background-elements/blurred-circle-4-480.webp'
+import bubble6_480_webp from '../../../../images/background-elements/blurred-circle-6-480.webp'
+import bubble5_480_webp from '../../../../images/background-elements/blurred-circle-5-480.webp'
 
-import MediaImage from "../../ui/media-image/media-image";
-import { LangContext, Is480Context } from "../../../utils/contexts";
+import MediaImage from "../../../ui/media-image/media-image";
+import { LangContext, Is480Context } from "../../../../utils/contexts";
 
 export default function BackgroundItems() {
   const [ offset, setOffset ] = React.useState(0)

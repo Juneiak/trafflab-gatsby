@@ -5,9 +5,10 @@ import ContactsList from "../../common/contacts-list/contacts-list";
 import Logo from "../../common/logo/logo";
 import NavPopupElement from "./nav-popup-element/nav-popup-element";
 import { LangContext } from "../../../utils/contexts";
-
+import { getUrlLang } from "../../../utils/utils";
 export default function NavPopup({isOpen, closeHandler}) {
   const data = React.useContext(LangContext).navPopup;
+  const lang = getUrlLang()
   
   return (
     <PopupLayout isOpen={isOpen} closeHandler={closeHandler}>
@@ -20,11 +21,11 @@ export default function NavPopup({isOpen, closeHandler}) {
           
           <nav className={styles.nav}>
             <ul className={styles.list}>
-              <NavPopupElement closeHandler={closeHandler} text={data.sources} linkTo='#sources' />
-              <NavPopupElement closeHandler={closeHandler} text={data.ecosystem} linkTo='#ecosystem' />
-              <NavPopupElement closeHandler={closeHandler} text={data.blog} linkTo='#blog' />
-              <NavPopupElement closeHandler={closeHandler} text={data.partners} linkTo='#partners' />
-              <NavPopupElement closeHandler={closeHandler} text={data.vacancies} linkTo='#vacancies' />
+              <NavPopupElement closeHandler={closeHandler} text={data.sources} linkTo={`/${lang}#sources`} />
+              <NavPopupElement closeHandler={closeHandler} text={data.ecosystem} linkTo={`/${lang}#ecosystem`} />
+              <NavPopupElement closeHandler={closeHandler} text={data.blog} linkTo={`/${lang}#blog`} />
+              <NavPopupElement closeHandler={closeHandler} text={data.partners} linkTo={`/${lang}#partners`} />
+              <NavPopupElement closeHandler={closeHandler} text={data.vacancies} linkTo={`/${lang}#vacancies`} />
               <NavPopupElement closeHandler={closeHandler} text={data.contacts} linkTo='#contacts' />
             </ul>
           </nav>

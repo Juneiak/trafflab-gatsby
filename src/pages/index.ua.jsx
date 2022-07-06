@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 import { LangContext } from "../utils/contexts";
 import uaData from "../misc/ua-data";
 
-import IndexPageLayout from "../components/index-page-layout/index-page-layout";
+import IndexPageLayout from "../components/layouts/index-page-layout/index-page-layout";
 import { FormPopup, ArticlePopup, NavPopup } from "../components/popups";
 import {
   CountriesMarquee,
@@ -16,7 +16,7 @@ import {
   Vacancies,
   PageForm,
 } from '../components/sections';
-
+import { changeUrl } from "../utils/utils";
 import favicon from '../images/misc/favicon.ico';
 
 export default function IndexPage() {
@@ -33,13 +33,15 @@ export default function IndexPage() {
   const openFormPopup = () =>  setFormPopupOpen(true);
   const closeFormPopup = () => setFormPopupOpen(false);
 
-  const openArticlePopup = (id) => {
+  const openArticlePopup = (id, slug) => {
     setArticleId(id)
+    changeUrl(`/ua/blog/${slug}`)
     setArticlePopupOpen(true);
   }  
   const closeArticlePopup = () => {
     setArticlePopupOpen(false);
-    setArticleId(null)
+    changeUrl(`/ua/`)
+    // setArticleId(null)
   }
   React.useEffect(() => {
     if (localStorage.getItem('lang') !== 'ua' ) localStorage.setItem('lang', 'ua');

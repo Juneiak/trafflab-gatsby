@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 import { LangContext } from "../utils/contexts";
 import ruData from "../misc/ru-data";
 
-import IndexPageLayout from "../components/index-page-layout/index-page-layout";
+import IndexPageLayout from "../components/layouts/index-page-layout/index-page-layout";
 import { FormPopup, ArticlePopup, NavPopup } from "../components/popups";
 import {
   CountriesMarquee,
@@ -16,8 +16,8 @@ import {
   Vacancies,
   PageForm,
 } from '../components/sections';
-
 import favicon from '../images/misc/favicon.ico';
+import { changeUrl } from "../utils/utils";
 
 export default function IndexPage() {
 
@@ -27,20 +27,21 @@ export default function IndexPage() {
   const [ formPopupOpen, setFormPopupOpen ] = React.useState(false);
   const [ navPopupOpen, setNavPopupOpen ] = React.useState(false);
 
-
   const openNavPopup = () =>  setNavPopupOpen(true);
   const closeNavPopup = () => setNavPopupOpen(false);
 
   const openFormPopup = () =>  setFormPopupOpen(true);
   const closeFormPopup = () => setFormPopupOpen(false);
 
-  const openArticlePopup = (id) => {
+  const openArticlePopup = (id, slug) => {
     setArticleId(id)
+    changeUrl(`/ru/blog/${slug}`)
     setArticlePopupOpen(true);
   }  
   const closeArticlePopup = () => {
     setArticlePopupOpen(false);
-    setArticleId(null)
+    // setArticleId(null)
+    changeUrl(`/ru/`)
   }
 
   React.useEffect(() => {

@@ -8,7 +8,7 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
@@ -17,12 +17,14 @@
   "dependencies": {
     "@splidejs/react-splide": "^0.7.7",
     "gatsby": "^4.15.1",
+    "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-google-gtag": "^4.17.0",
     "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-image": "^2.15.0",
     "gatsby-plugin-react-helmet": "^5.15.0",
     "gatsby-plugin-sharp": "^4.15.0",
     "gatsby-source-filesystem": "^4.15.0",
+    "gatsby-transformer-remark": "^5.17.0",
     "gatsby-transformer-sharp": "^4.15.0",
     "lottie-web": "^5.9.4",
     "react": "^18.1.0",

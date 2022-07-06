@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as styles from './article-popup.module.css';
 import PopupLayout from '../popup-layout/popup-layout';
-import Paragraph from './paragraph/paragraph';
+import Paragraph from "../../common/paragraph/paragraph";
 
 import MediaImage from "../../ui/media-image/media-image";
 import { LangContext } from "../../../utils/contexts";
@@ -9,8 +9,8 @@ import { LangContext } from "../../../utils/contexts";
 export default function ArticlePopup({isOpen, id, closeHandler}) {
 
   const data = React.useContext(LangContext).blog.articlesList[id];
-  if (!data) return null
 
+  if (!data) return null
   return (
     <PopupLayout isOpen={isOpen} closeHandler={closeHandler}>
 
