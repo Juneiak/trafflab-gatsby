@@ -30,6 +30,7 @@ export default function useIs480() {
     mediaMatch.addEventListener('change', updateState)
     return () => mediaMatch.removeEventListener('change', updateState)
   }, []);
-  if (is480 === 'init' && window !== 'undefind') return window.matchMedia('(max-width: 480px)').matches
+
+  if (is480 === 'init' && typeof window !== 'undefined') return window.matchMedia('(max-width: 480px)').matches
   return is480;
 }
