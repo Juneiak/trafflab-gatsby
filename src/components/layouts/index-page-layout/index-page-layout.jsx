@@ -36,9 +36,7 @@ export default function IndexPageLayout({ children, openFormPopupHandler, openNa
   return (
     <>
       <Is480Context.Provider value={is480}>
-        {is480 === 'init'
-          ? <></>
-          : <MessagesContext.Provider value={showSuccessMessage}>
+          <MessagesContext.Provider value={showSuccessMessage}>
               <div ref={pageRef} className={styles.page}>
                 <BackgroundItems />
                 
@@ -55,12 +53,11 @@ export default function IndexPageLayout({ children, openFormPopupHandler, openNa
                   </main>
                   
                   <Footer />
-                  {!is480 && <FixedContacts scrollHandler={smoothScrollToHeader} />}
+                  {(!is480) && <FixedContacts scrollHandler={smoothScrollToHeader} />}
                 </div>
                 <SuccessMessage isShown={isSuccessMessage} />
               </div>
             </MessagesContext.Provider>
-        }
         <YMInitializer accounts={[89406166]} options={{webvisor: true}} version="2" />
       </Is480Context.Provider>
     </>

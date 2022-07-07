@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function useIs480() {
+export function useIs480v1() {
   const [is480, setIs480] = React.useState('init');
 
   React.useEffect(() => {
@@ -14,5 +14,22 @@ export default function useIs480() {
     return () => window.removeEventListener('resize', handleResize)
   }, [is480]);
 
+  return is480;
+}
+
+export default function useIs480() {
+  const [is480, setIs480] = React.useState('init');
+
+
+  React.useEffect(() => {
+    const mediaMatch = window.matchMedia('(max-width: 480px)')
+    const updateState = () => {
+      setIs480(mediaMatch.matches)
+    }
+    setIs480(mediaMatch.matches)
+    mediaMatch.addEventListener('change', updateState)
+    return () => mediaMatch.removeEventListener('change', updateState)
+  }, []);
+  if (is480 === 'init' && window !== 'undefind') return window.matchMedia('(max-width: 480px)').matches
   return is480;
 }
