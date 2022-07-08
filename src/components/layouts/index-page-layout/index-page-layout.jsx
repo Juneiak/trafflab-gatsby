@@ -26,6 +26,7 @@ export default function IndexPageLayout({ children, openFormPopupHandler, openNa
   const pageRef = React.useRef();
   const is480 = useIs480()
   
+  
   const smoothScrollToHeader = () => pageRef.current.scrollIntoView({behavior: 'smooth'});
   
   const showSuccessMessage = () => {
