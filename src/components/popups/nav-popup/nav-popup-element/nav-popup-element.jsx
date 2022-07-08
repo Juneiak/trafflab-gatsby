@@ -1,6 +1,5 @@
 import * as React from "react"
 import * as styles from './nav-popup-element.module.css';
-import { Link } from "gatsby";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 export default function NavPopupElement({ text, linkTo, closeHandler }) {
   
