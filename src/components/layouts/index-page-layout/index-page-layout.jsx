@@ -28,6 +28,7 @@ export default function IndexPageLayout({ children, openFormPopupHandler, openNa
   
   const smoothScrollToHeader = () => pageRef.current.scrollIntoView({behavior: 'smooth'});
   
+  
   const showSuccessMessage = () => {
     setIsSuccessMessage(true)
     setTimeout(() => setIsSuccessMessage(false), 2000)
