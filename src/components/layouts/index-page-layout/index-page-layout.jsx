@@ -34,6 +34,7 @@ export default function IndexPageLayout({ children, openFormPopupHandler, openNa
     setTimeout(() => setIsSuccessMessage(false), 2000)
   } 
 
+   
   return (
     <>
       <Is480Context.Provider value={is480}>
